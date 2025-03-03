@@ -1,0 +1,89 @@
+\doxysection{GUIMgr Class Reference}
+\hypertarget{class_g_u_i_mgr}{}\label{class_g_u_i_mgr}\index{GUIMgr@{GUIMgr}}
+Inheritance diagram for GUIMgr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_g_u_i_mgr}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_g_u_i_mgr_a26762d5dda74f47fcac68756231cdd0b}{Show\+GUI$<$ T $>$}} (string gui\+\_\+name, int layer, Unity\+Action$<$ T $>$ call\+Back=null)
+\begin{DoxyCompactList}\small\item\em 加载\+GUI界面 load GUI panel \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_u_i_mgr_a8e316447d895b32198a77135b276de62}{Hide\+GUI}} (string gui\+\_\+name)
+\begin{DoxyCompactList}\small\item\em 隐藏\+GUI界面 hide GUI panel \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_g_u_i_mgr_a7f2392a6755e392e5bf4af088a30633a}{Get\+GUI$<$ T $>$}} (string gui\+\_\+name)
+\begin{DoxyCompactList}\small\item\em 获取已显示面板 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_mgr_base_mono-1-g}{Mgr\+Base\+Mono$<$ T $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+static T \mbox{\hyperlink{class_mgr_base_mono-1-g_ad93b220c723b9ec899592e73112cd4df}{Mgr}} ()
+\begin{DoxyCompactList}\small\item\em 获取类单例对象 Get Class Singleton Object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_g_u_i_mgr_a7f2392a6755e392e5bf4af088a30633a}\index{GUIMgr@{GUIMgr}!GetGUI$<$ T $>$@{GetGUI$<$ T $>$}}
+\index{GetGUI$<$ T $>$@{GetGUI$<$ T $>$}!GUIMgr@{GUIMgr}}
+\doxysubsubsection{\texorpdfstring{GetGUI$<$ T $>$()}{GetGUI< T >()}}
+{\footnotesize\ttfamily \label{class_g_u_i_mgr_a7f2392a6755e392e5bf4af088a30633a} 
+T GUIMgr.\+Get\+GUI$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{gui\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取已显示面板 
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \mbox{\hyperlink{class_g_u_i_base}{GUIBase}}}]\end{description}
+\end{Desc}
+\Hypertarget{class_g_u_i_mgr_a8e316447d895b32198a77135b276de62}\index{GUIMgr@{GUIMgr}!HideGUI@{HideGUI}}
+\index{HideGUI@{HideGUI}!GUIMgr@{GUIMgr}}
+\doxysubsubsection{\texorpdfstring{HideGUI()}{HideGUI()}}
+{\footnotesize\ttfamily \label{class_g_u_i_mgr_a8e316447d895b32198a77135b276de62} 
+void GUIMgr.\+Hide\+GUI (\begin{DoxyParamCaption}\item[{string}]{gui\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+隐藏\+GUI界面 hide GUI panel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gui\+\_\+name} & GUI界面名称 GUI panel name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+GUI界面对象 GUI panel object
+\end{DoxyReturn}
+\Hypertarget{class_g_u_i_mgr_a26762d5dda74f47fcac68756231cdd0b}\index{GUIMgr@{GUIMgr}!ShowGUI$<$ T $>$@{ShowGUI$<$ T $>$}}
+\index{ShowGUI$<$ T $>$@{ShowGUI$<$ T $>$}!GUIMgr@{GUIMgr}}
+\doxysubsubsection{\texorpdfstring{ShowGUI$<$ T $>$()}{ShowGUI< T >()}}
+{\footnotesize\ttfamily \label{class_g_u_i_mgr_a26762d5dda74f47fcac68756231cdd0b} 
+void GUIMgr.\+Show\+GUI$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{gui\+\_\+name}{, }\item[{int}]{layer}{, }\item[{Unity\+Action$<$ T $>$}]{call\+Back}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+加载\+GUI界面 load GUI panel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gui\+\_\+name} & GUI界面名称 GUI panel name with path\\
+\hline
+{\em layer} & 显示层级 display layer\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Base\+GUI类 Base\+GUI class\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \mbox{\hyperlink{class_g_u_i_base}{GUIBase}}}]\end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Basic\+Framework/\+Unity\+Frame/GUIMgr.\+cs\end{DoxyCompactItemize}

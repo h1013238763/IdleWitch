@@ -1,0 +1,92 @@
+\doxysection{Pool\+Mgr Class Reference}
+\hypertarget{class_pool_mgr}{}\label{class_pool_mgr}\index{PoolMgr@{PoolMgr}}
+Inheritance diagram for Pool\+Mgr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pool_mgr}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_pool_mgr_1_1_pool_data}{Pool\+Data}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_pool_mgr_a2322be3e8e1c7eaee62d728d0b23052b}{Push\+Obj}} (string name, Game\+Object obj)
+\begin{DoxyCompactList}\small\item\em 往对象池中放入对象 Put object into object pool \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pool_mgr_a4e9cae857d380b63d42628812200f3e0}{Pop\+Obj}} (string name, Unity\+Action$<$ Game\+Object $>$ call\+Back)
+\begin{DoxyCompactList}\small\item\em 从对象池中取出对象 Get object from object pool \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pool_mgr_a857b9c083beed5344ba5442ad9fbbffc}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em 清理对象池 Clear object pool \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pool_mgr_abd315430fa452a127baa49b43757ea0d}\label{class_pool_mgr_abd315430fa452a127baa49b43757ea0d} 
+Game\+Object {\bfseries pool\+\_\+obj}
+\item 
+\Hypertarget{class_pool_mgr_ae21a6334705d9b1ef7fb9364964f0e7c}\label{class_pool_mgr_ae21a6334705d9b1ef7fb9364964f0e7c} 
+Dictionary$<$ string, \mbox{\hyperlink{class_pool_mgr_1_1_pool_data}{Pool\+Data}} $>$ {\bfseries pool\+\_\+dict} = new Dictionary$<$string, \mbox{\hyperlink{class_pool_mgr_1_1_pool_data}{Pool\+Data}}$>$()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_mgr_base-1-g}{Mgr\+Base$<$ T $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+static T \mbox{\hyperlink{class_mgr_base-1-g_a99b0e45113c7429d2e1d551e563c36f8}{Mgr}} ()
+\begin{DoxyCompactList}\small\item\em 获取类单例对象 Get Class Singleton Object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pool_mgr_a857b9c083beed5344ba5442ad9fbbffc}\index{PoolMgr@{PoolMgr}!Clear@{Clear}}
+\index{Clear@{Clear}!PoolMgr@{PoolMgr}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily \label{class_pool_mgr_a857b9c083beed5344ba5442ad9fbbffc} 
+void Pool\+Mgr.\+Clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+清理对象池 Clear object pool 
+
+// \Hypertarget{class_pool_mgr_a4e9cae857d380b63d42628812200f3e0}\index{PoolMgr@{PoolMgr}!PopObj@{PopObj}}
+\index{PopObj@{PopObj}!PoolMgr@{PoolMgr}}
+\doxysubsubsection{\texorpdfstring{PopObj()}{PopObj()}}
+{\footnotesize\ttfamily \label{class_pool_mgr_a4e9cae857d380b63d42628812200f3e0} 
+void Pool\+Mgr.\+Pop\+Obj (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{Unity\+Action$<$ Game\+Object $>$}]{call\+Back}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+从对象池中取出对象 Get object from object pool 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & 对象名 object name\\
+\hline
+{\em call\+Back} & 回调函数 callback function\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+被取出的对象 The object that was pop
+\end{DoxyReturn}
+\Hypertarget{class_pool_mgr_a2322be3e8e1c7eaee62d728d0b23052b}\index{PoolMgr@{PoolMgr}!PushObj@{PushObj}}
+\index{PushObj@{PushObj}!PoolMgr@{PoolMgr}}
+\doxysubsubsection{\texorpdfstring{PushObj()}{PushObj()}}
+{\footnotesize\ttfamily \label{class_pool_mgr_a2322be3e8e1c7eaee62d728d0b23052b} 
+void Pool\+Mgr.\+Push\+Obj (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{Game\+Object}]{obj}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+往对象池中放入对象 Put object into object pool 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & 对象名 object name\\
+\hline
+{\em obj} & 对象 object\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Basic\+Framework/\+Resource\+Frame/Pool\+Mgr.\+cs\end{DoxyCompactItemize}

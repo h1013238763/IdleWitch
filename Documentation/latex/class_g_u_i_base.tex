@@ -1,0 +1,197 @@
+\doxysection{GUIBase Class Reference}
+\hypertarget{class_g_u_i_base}{}\label{class_g_u_i_base}\index{GUIBase@{GUIBase}}
+
+
+GUI基类 GUI Base Class.  
+
+
+Inheritance diagram for GUIBase\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_g_u_i_base}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_g_u_i_base_ac29518a9a8d5eece680018b8a98f1d4c}{Show}} ()
+\begin{DoxyCompactList}\small\item\em 显示事件 Show Event \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_g_u_i_base_a6d98fd7592b9df6a6709de1dd50f4632}{Hide}} ()
+\begin{DoxyCompactList}\small\item\em 隐藏事件 Hide Event \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_g_u_i_base_a892e7d44c8a0e6fc12790955e92cb967}\label{class_g_u_i_base_a892e7d44c8a0e6fc12790955e92cb967} 
+virtual void {\bfseries Awake} ()
+\begin{DoxyCompactList}\small\item\em 初始化 Awake \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_g_u_i_base_a8561b054fe5fcf6472225a2c63620813}{Get\+Component$<$ T $>$}} (string child\+\_\+name)
+\begin{DoxyCompactList}\small\item\em 获取子物体组件 Get child component \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_u_i_base_a49b38397abfdf2fd0ad01dd81700c739}{Add\+Children\+Control$<$ T $>$}} ()
+\begin{DoxyCompactList}\small\item\em 添加组件事件监听 Add component event listener \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_g_u_i_base_af7b29c45677441b1751ddbc92be55f62}{On\+Button\+Click}} (string btn\+\_\+name)
+\begin{DoxyCompactList}\small\item\em 处理按钮点击事件 Handle button click event \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_g_u_i_base_a82d4851ecb507c4648119c1435f6110b}{On\+Toggle\+Value\+Changed}} (string toggle\+\_\+name, bool value)
+\begin{DoxyCompactList}\small\item\em 处理开关状态变化事件 Handle toggle state change event \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_g_u_i_base_abf8d2ee9d8cb883e281a4ca171690430}{On\+Slider\+Value\+Changed}} (string slider\+\_\+name, float value)
+\begin{DoxyCompactList}\small\item\em 处理滑动条值变化事件 Handle slider value change event \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_g_u_i_base_aef33efa855503029ca4b9af0e85b4b8b}{On\+Input\+Field\+End\+Edit}} (string field\+\_\+name, string value)
+\begin{DoxyCompactList}\small\item\em 处理输入框结束编辑事件 Handle input field end edit event \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_g_u_i_base_ac8989294b431e89e24121ce8978128fb}\label{class_g_u_i_base_ac8989294b431e89e24121ce8978128fb} 
+Dictionary$<$ string, List$<$ UIBehaviour $>$ $>$ {\bfseries child\+\_\+dict}
+\begin{DoxyCompactList}\small\item\em 子物体字典 Child Object Dictionary \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+GUI基类 GUI Base Class. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_g_u_i_base_a49b38397abfdf2fd0ad01dd81700c739}\index{GUIBase@{GUIBase}!AddChildrenControl$<$ T $>$@{AddChildrenControl$<$ T $>$}}
+\index{AddChildrenControl$<$ T $>$@{AddChildrenControl$<$ T $>$}!GUIBase@{GUIBase}}
+\doxysubsubsection{\texorpdfstring{AddChildrenControl$<$ T $>$()}{AddChildrenControl< T >()}}
+{\footnotesize\ttfamily \label{class_g_u_i_base_a49b38397abfdf2fd0ad01dd81700c739} 
+void GUIBase.\+Add\+Children\+Control$<$ T $>$ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+添加组件事件监听 Add component event listener 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em UIBehaviour}]\end{description}
+\end{Desc}
+\Hypertarget{class_g_u_i_base_a8561b054fe5fcf6472225a2c63620813}\index{GUIBase@{GUIBase}!GetComponent$<$ T $>$@{GetComponent$<$ T $>$}}
+\index{GetComponent$<$ T $>$@{GetComponent$<$ T $>$}!GUIBase@{GUIBase}}
+\doxysubsubsection{\texorpdfstring{GetComponent$<$ T $>$()}{GetComponent< T >()}}
+{\footnotesize\ttfamily \label{class_g_u_i_base_a8561b054fe5fcf6472225a2c63620813} 
+T GUIBase.\+Get\+Component$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{child\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+获取子物体组件 Get child component 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & 组件类型 Component Type \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em child\+\_\+name} & 子物体名称 Child Object Name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+组件 Component 
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Object}]\end{description}
+\end{Desc}
+\Hypertarget{class_g_u_i_base_a6d98fd7592b9df6a6709de1dd50f4632}\index{GUIBase@{GUIBase}!Hide@{Hide}}
+\index{Hide@{Hide}!GUIBase@{GUIBase}}
+\doxysubsubsection{\texorpdfstring{Hide()}{Hide()}}
+{\footnotesize\ttfamily \label{class_g_u_i_base_a6d98fd7592b9df6a6709de1dd50f4632} 
+virtual void GUIBase.\+Hide (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+隐藏事件 Hide Event 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_gui_loading_a2226c2b44a27f90251179ea58d845efd}{Gui\+Loading}}.
+
+\Hypertarget{class_g_u_i_base_af7b29c45677441b1751ddbc92be55f62}\index{GUIBase@{GUIBase}!OnButtonClick@{OnButtonClick}}
+\index{OnButtonClick@{OnButtonClick}!GUIBase@{GUIBase}}
+\doxysubsubsection{\texorpdfstring{OnButtonClick()}{OnButtonClick()}}
+{\footnotesize\ttfamily \label{class_g_u_i_base_af7b29c45677441b1751ddbc92be55f62} 
+virtual void GUIBase.\+On\+Button\+Click (\begin{DoxyParamCaption}\item[{string}]{btn\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+处理按钮点击事件 Handle button click event 
+
+
+\begin{DoxyParams}{Parameters}
+{\em btn\+Name} & 按钮名称 Button Name \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_gui_confirm_ab4eb802cd2539288da4cc9b769245c80}{Gui\+Confirm}}, \mbox{\hyperlink{class_gui_setting_a1d2d12a6f1bdd282e7ad460a94dc476e}{Gui\+Setting}}, and \mbox{\hyperlink{class_gui_title_a5fe34b9d002e39724456af5d7b232c94}{Gui\+Title}}.
+
+\Hypertarget{class_g_u_i_base_aef33efa855503029ca4b9af0e85b4b8b}\index{GUIBase@{GUIBase}!OnInputFieldEndEdit@{OnInputFieldEndEdit}}
+\index{OnInputFieldEndEdit@{OnInputFieldEndEdit}!GUIBase@{GUIBase}}
+\doxysubsubsection{\texorpdfstring{OnInputFieldEndEdit()}{OnInputFieldEndEdit()}}
+{\footnotesize\ttfamily \label{class_g_u_i_base_aef33efa855503029ca4b9af0e85b4b8b} 
+virtual void GUIBase.\+On\+Input\+Field\+End\+Edit (\begin{DoxyParamCaption}\item[{string}]{field\+\_\+name}{, }\item[{string}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+处理输入框结束编辑事件 Handle input field end edit event 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field\+Name} & 输入框名称 Input Field Name \\
+\hline
+{\em value} & 输入框值 Input Field Value \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_g_u_i_base_abf8d2ee9d8cb883e281a4ca171690430}\index{GUIBase@{GUIBase}!OnSliderValueChanged@{OnSliderValueChanged}}
+\index{OnSliderValueChanged@{OnSliderValueChanged}!GUIBase@{GUIBase}}
+\doxysubsubsection{\texorpdfstring{OnSliderValueChanged()}{OnSliderValueChanged()}}
+{\footnotesize\ttfamily \label{class_g_u_i_base_abf8d2ee9d8cb883e281a4ca171690430} 
+virtual void GUIBase.\+On\+Slider\+Value\+Changed (\begin{DoxyParamCaption}\item[{string}]{slider\+\_\+name}{, }\item[{float}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+处理滑动条值变化事件 Handle slider value change event 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slider\+Name} & 滑动条名称 Slider Name \\
+\hline
+{\em value} & 滑动条值 Slider Value \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_g_u_i_base_a82d4851ecb507c4648119c1435f6110b}\index{GUIBase@{GUIBase}!OnToggleValueChanged@{OnToggleValueChanged}}
+\index{OnToggleValueChanged@{OnToggleValueChanged}!GUIBase@{GUIBase}}
+\doxysubsubsection{\texorpdfstring{OnToggleValueChanged()}{OnToggleValueChanged()}}
+{\footnotesize\ttfamily \label{class_g_u_i_base_a82d4851ecb507c4648119c1435f6110b} 
+virtual void GUIBase.\+On\+Toggle\+Value\+Changed (\begin{DoxyParamCaption}\item[{string}]{toggle\+\_\+name}{, }\item[{bool}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+处理开关状态变化事件 Handle toggle state change event 
+
+
+\begin{DoxyParams}{Parameters}
+{\em toggle\+Name} & 开关名称 Toggle Name \\
+\hline
+{\em value} & 开关状态 Toggle State \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_g_u_i_base_ac29518a9a8d5eece680018b8a98f1d4c}\index{GUIBase@{GUIBase}!Show@{Show}}
+\index{Show@{Show}!GUIBase@{GUIBase}}
+\doxysubsubsection{\texorpdfstring{Show()}{Show()}}
+{\footnotesize\ttfamily \label{class_g_u_i_base_ac29518a9a8d5eece680018b8a98f1d4c} 
+virtual void GUIBase.\+Show (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+显示事件 Show Event 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_gui_confirm_ab5572965747cf8ca779c1c00826ffcdc}{Gui\+Confirm}}, \mbox{\hyperlink{class_gui_loading_a2ea135b0e56957ca0ea03226867cc5eb}{Gui\+Loading}}, \mbox{\hyperlink{class_gui_setting_ae339117c8d847a2978622d2775cfbfe9}{Gui\+Setting}}, and \mbox{\hyperlink{class_gui_title_aecfe7b51d18124b84a517a3d2af607cf}{Gui\+Title}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Basic\+Framework/\+Unity\+Frame/GUIBase.\+cs\end{DoxyCompactItemize}

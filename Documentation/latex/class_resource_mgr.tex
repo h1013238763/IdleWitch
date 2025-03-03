@@ -1,0 +1,93 @@
+\doxysection{Resource\+Mgr Class Reference}
+\hypertarget{class_resource_mgr}{}\label{class_resource_mgr}\index{ResourceMgr@{ResourceMgr}}
+
+
+资源加载管理器  
+
+
+Inheritance diagram for Resource\+Mgr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_resource_mgr}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+T \mbox{\hyperlink{class_resource_mgr_a17bc55657b8705efafb190d807cfea55}{Load$<$ T $>$}} (string name)
+\begin{DoxyCompactList}\small\item\em 加载资源 load resource \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_resource_mgr_a0cacce35ead3244bdea9d94d383c469f}{Load\+Async$<$ T $>$}} (string name, Unity\+Action$<$ T $>$ callback)
+\begin{DoxyCompactList}\small\item\em 异步加载资源 load resource async \end{DoxyCompactList}\item 
+\Hypertarget{class_resource_mgr_a3525b5c2ceb1588f06e6c5df9a45e4cb}\label{class_resource_mgr_a3525b5c2ceb1588f06e6c5df9a45e4cb} 
+void {\bfseries Clear\+Memory} ()
+\begin{DoxyCompactList}\small\item\em 清理内存 clear memory \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_mgr_base-1-g}{Mgr\+Base$<$ T $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+static T \mbox{\hyperlink{class_mgr_base-1-g_a99b0e45113c7429d2e1d551e563c36f8}{Mgr}} ()
+\begin{DoxyCompactList}\small\item\em 获取类单例对象 Get Class Singleton Object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+资源加载管理器 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_resource_mgr_a17bc55657b8705efafb190d807cfea55}\index{ResourceMgr@{ResourceMgr}!Load$<$ T $>$@{Load$<$ T $>$}}
+\index{Load$<$ T $>$@{Load$<$ T $>$}!ResourceMgr@{ResourceMgr}}
+\doxysubsubsection{\texorpdfstring{Load$<$ T $>$()}{Load< T >()}}
+{\footnotesize\ttfamily \label{class_resource_mgr_a17bc55657b8705efafb190d807cfea55} 
+T Resource\+Mgr.\+Load$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+加载资源 load resource 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & 资源路径 resource path\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & 资源类型 resource type\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+资源 resource
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Object}]\end{description}
+\end{Desc}
+\Hypertarget{class_resource_mgr_a0cacce35ead3244bdea9d94d383c469f}\index{ResourceMgr@{ResourceMgr}!LoadAsync$<$ T $>$@{LoadAsync$<$ T $>$}}
+\index{LoadAsync$<$ T $>$@{LoadAsync$<$ T $>$}!ResourceMgr@{ResourceMgr}}
+\doxysubsubsection{\texorpdfstring{LoadAsync$<$ T $>$()}{LoadAsync< T >()}}
+{\footnotesize\ttfamily \label{class_resource_mgr_a0cacce35ead3244bdea9d94d383c469f} 
+void Resource\+Mgr.\+Load\+Async$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{Unity\+Action$<$ T $>$}]{callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+异步加载资源 load resource async 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & 资源路径 resource path\\
+\hline
+{\em callback} & 回调函数 callback function\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & 资源类型 resource type\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Object}]\end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Basic\+Framework/\+Resource\+Frame/Resource\+Mgr.\+cs\end{DoxyCompactItemize}

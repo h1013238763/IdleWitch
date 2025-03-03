@@ -1,0 +1,150 @@
+\doxysection{Gui\+Setting Class Reference}
+\hypertarget{class_gui_setting}{}\label{class_gui_setting}\index{GuiSetting@{GuiSetting}}
+Inheritance diagram for Gui\+Setting\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_gui_setting}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_gui_setting_ae339117c8d847a2978622d2775cfbfe9}{Show}} ()
+\begin{DoxyCompactList}\small\item\em 显示 Show \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_gui_base}{Gui\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries Hide} ()
+\begin{DoxyCompactList}\small\item\em 隐藏事件 Hide Event \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_gui_setting_a1d2d12a6f1bdd282e7ad460a94dc476e}{On\+Button\+Click}} (string btn\+\_\+name)
+\begin{DoxyCompactList}\small\item\em 按钮点击事件 Button click event \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_gui_setting_afadf3423ef5efa53974a9b87700c91e1}{On\+Slider\+Value\+Changed}} (string slider\+\_\+name, float value)
+\begin{DoxyCompactList}\small\item\em 滑动条数值改变事件 Slider value change event \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_gui_setting_ac7b8c2554ab145b58402a569f87c72e6}{On\+Dropdown\+Value\+Changed}} (string dropdown\+\_\+name, int value)
+\begin{DoxyCompactList}\small\item\em 下拉框数值改变事件 Dropdown value change event \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_gui_setting_ad754c9bcab6b7eacb5909e20c9d65d8c}{On\+Toggle\+Value\+Changed}} (string toggle\+\_\+name, bool value)
+\begin{DoxyCompactList}\small\item\em 开关状态改变事件 Toggle state change event \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_gui_base}{Gui\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries Awake} ()
+\begin{DoxyCompactList}\small\item\em 初始化 Awake \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_gui_base_a94ceca496c05f91cef6f8ee0340ad56c}{Get\+Component$<$ T $>$}} (string child\+\_\+name)
+\begin{DoxyCompactList}\small\item\em 获取子物体组件 Get child component \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gui_base_ab5890b8052d186a9f61aa7a7963ad7e3}{Add\+Children\+Control$<$ T $>$}} ()
+\begin{DoxyCompactList}\small\item\em 添加组件事件监听 Add component event listener \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gui_base_a0f7d194e98ff926a1ff2f6e5048f4992}{On\+Input\+Field\+End\+Edit}} (string field\+\_\+name, string value)
+\begin{DoxyCompactList}\small\item\em 处理输入框结束编辑事件 Handle input field end edit event \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_gui_base}{Gui\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, List$<$ UIBehaviour $>$ $>$ {\bfseries child\+\_\+dict}
+\begin{DoxyCompactList}\small\item\em 子物体字典 Child Object Dictionary \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_gui_setting_a1d2d12a6f1bdd282e7ad460a94dc476e}\index{GuiSetting@{GuiSetting}!OnButtonClick@{OnButtonClick}}
+\index{OnButtonClick@{OnButtonClick}!GuiSetting@{GuiSetting}}
+\doxysubsubsection{\texorpdfstring{OnButtonClick()}{OnButtonClick()}}
+{\footnotesize\ttfamily \label{class_gui_setting_a1d2d12a6f1bdd282e7ad460a94dc476e} 
+override void Gui\+Setting.\+On\+Button\+Click (\begin{DoxyParamCaption}\item[{string}]{btn\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+按钮点击事件 Button click event 
+
+
+\begin{DoxyParams}{Parameters}
+{\em btn\+\_\+name} & 按钮名称 Button name \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_gui_base_aee9ebe576f4d934063c334f902fb5b95}{Gui\+Base}}.
+
+\Hypertarget{class_gui_setting_ac7b8c2554ab145b58402a569f87c72e6}\index{GuiSetting@{GuiSetting}!OnDropdownValueChanged@{OnDropdownValueChanged}}
+\index{OnDropdownValueChanged@{OnDropdownValueChanged}!GuiSetting@{GuiSetting}}
+\doxysubsubsection{\texorpdfstring{OnDropdownValueChanged()}{OnDropdownValueChanged()}}
+{\footnotesize\ttfamily \label{class_gui_setting_ac7b8c2554ab145b58402a569f87c72e6} 
+override void Gui\+Setting.\+On\+Dropdown\+Value\+Changed (\begin{DoxyParamCaption}\item[{string}]{dropdown\+\_\+name}{, }\item[{int}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+下拉框数值改变事件 Dropdown value change event 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dropdown\+\_\+name} & 下拉框名称 Dropdown name \\
+\hline
+{\em value} & 数值 Value \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_gui_base_a930b07dcebcde2a232d7bbbba419154f}{Gui\+Base}}.
+
+\Hypertarget{class_gui_setting_afadf3423ef5efa53974a9b87700c91e1}\index{GuiSetting@{GuiSetting}!OnSliderValueChanged@{OnSliderValueChanged}}
+\index{OnSliderValueChanged@{OnSliderValueChanged}!GuiSetting@{GuiSetting}}
+\doxysubsubsection{\texorpdfstring{OnSliderValueChanged()}{OnSliderValueChanged()}}
+{\footnotesize\ttfamily \label{class_gui_setting_afadf3423ef5efa53974a9b87700c91e1} 
+override void Gui\+Setting.\+On\+Slider\+Value\+Changed (\begin{DoxyParamCaption}\item[{string}]{slider\+\_\+name}{, }\item[{float}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+滑动条数值改变事件 Slider value change event 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slider\+\_\+name} & 滑动条名称 Slider name \\
+\hline
+{\em value} & 数值 Value \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_gui_base_a1001a7e44b910517c434f11003664c5c}{Gui\+Base}}.
+
+\Hypertarget{class_gui_setting_ad754c9bcab6b7eacb5909e20c9d65d8c}\index{GuiSetting@{GuiSetting}!OnToggleValueChanged@{OnToggleValueChanged}}
+\index{OnToggleValueChanged@{OnToggleValueChanged}!GuiSetting@{GuiSetting}}
+\doxysubsubsection{\texorpdfstring{OnToggleValueChanged()}{OnToggleValueChanged()}}
+{\footnotesize\ttfamily \label{class_gui_setting_ad754c9bcab6b7eacb5909e20c9d65d8c} 
+override void Gui\+Setting.\+On\+Toggle\+Value\+Changed (\begin{DoxyParamCaption}\item[{string}]{toggle\+\_\+name}{, }\item[{bool}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+开关状态改变事件 Toggle state change event 
+
+
+\begin{DoxyParams}{Parameters}
+{\em toggle\+\_\+name} & 开关名称 Toggle name \\
+\hline
+{\em value} & 状态 State \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_gui_base_aa02690b1ba59bb35bfddc6420f15ec0f}{Gui\+Base}}.
+
+\Hypertarget{class_gui_setting_ae339117c8d847a2978622d2775cfbfe9}\index{GuiSetting@{GuiSetting}!Show@{Show}}
+\index{Show@{Show}!GuiSetting@{GuiSetting}}
+\doxysubsubsection{\texorpdfstring{Show()}{Show()}}
+{\footnotesize\ttfamily \label{class_gui_setting_ae339117c8d847a2978622d2775cfbfe9} 
+override void Gui\+Setting.\+Show (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+显示 Show 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_gui_base_a2a1191d675d23fa9a929b6952c176915}{Gui\+Base}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+GUIPanels/\+Scene\+General/Gui\+Setting.\+cs\end{DoxyCompactItemize}

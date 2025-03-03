@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage version="1.0" date="2025-02-03_20-41-25" tag="">
+  <assembly name="Modules">
+    <class name="EventInfo" coveredlines="0" coverablelines="4" totallines="140" coveredbranches="0" totalbranches="0" />
+    <class name="EventInfo[T]" coveredlines="0" coverablelines="4" totallines="140" coveredbranches="0" totalbranches="0" />
+    <class name="EventMgr" coveredlines="0" coverablelines="40" totallines="140" coveredbranches="0" totalbranches="0" />
+    <class name="JsonMgr" coveredlines="15" coverablelines="42" totallines="91" coveredbranches="0" totalbranches="0" />
+    <class name="MgrBase[T]" coveredlines="5" coverablelines="5" totallines="26" coveredbranches="0" totalbranches="0" />
+    <class name="MgrBaseMono[T]" coveredlines="8" coverablelines="8" totallines="29" coveredbranches="0" totalbranches="0" />
+    <class name="MonoMgr" coveredlines="33" coverablelines="33" totallines="98" coveredbranches="0" totalbranches="0" />
+    <class name="ResourceMgr" coveredlines="0" coverablelines="14" totallines="68" coveredbranches="0" totalbranches="0" />
+  </assembly>
+</coverage>

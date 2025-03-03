@@ -1,0 +1,99 @@
+\doxysection{ISave\+Data Interface Reference}
+\hypertarget{interface_i_save_data}{}\label{interface_i_save_data}\index{ISaveData@{ISaveData}}
+
+
+用于配置数据的接口 Interface for configuration data handler  
+
+
+Inheritance diagram for ISave\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_i_save_data}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_i_save_data_a9bc0f8a6fd8143f4a0b371db48eb8f95}{New\+Data}} ()
+\begin{DoxyCompactList}\small\item\em 新建配置 New Configuration data \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{interface_i_save_data_a530d1f6d2de1754270ac799cf501d6e5}{Save\+Data}} ()
+\begin{DoxyCompactList}\small\item\em 保存配置为json字符串 Save Configuration data as json string \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_i_save_data_adb3a45aaba0a80ebd328ebb6fe67b90e}{Load\+Data}} (string config)
+\begin{DoxyCompactList}\small\item\em 从json字符串加载配置 Load Configuration data from json string \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_i_save_data_ac20bc7989daec37828b04c8f54470414}{Apply\+Data}} ()
+\begin{DoxyCompactList}\small\item\em 应用配置 Apply Configuration data \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+用于配置数据的接口 Interface for configuration data handler 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_i_save_data_ac20bc7989daec37828b04c8f54470414}\index{ISaveData@{ISaveData}!ApplyData@{ApplyData}}
+\index{ApplyData@{ApplyData}!ISaveData@{ISaveData}}
+\doxysubsubsection{\texorpdfstring{ApplyData()}{ApplyData()}}
+{\footnotesize\ttfamily \label{interface_i_save_data_ac20bc7989daec37828b04c8f54470414} 
+void ISave\+Data.\+Apply\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+应用配置 Apply Configuration data 
+
+
+
+Implemented in \mbox{\hyperlink{class_mgr_audio_a8e5f026b90d1c71e30d9f76e978d653b}{Mgr\+Audio}}, \mbox{\hyperlink{class_mgr_locale_a2f72419c739201c7f2708e8cab44c331}{Mgr\+Locale}}, and \mbox{\hyperlink{class_mgr_screen_af784a7cc7f90f00f471bff57086e1f10}{Mgr\+Screen}}.
+
+\Hypertarget{interface_i_save_data_adb3a45aaba0a80ebd328ebb6fe67b90e}\index{ISaveData@{ISaveData}!LoadData@{LoadData}}
+\index{LoadData@{LoadData}!ISaveData@{ISaveData}}
+\doxysubsubsection{\texorpdfstring{LoadData()}{LoadData()}}
+{\footnotesize\ttfamily \label{interface_i_save_data_adb3a45aaba0a80ebd328ebb6fe67b90e} 
+void ISave\+Data.\+Load\+Data (\begin{DoxyParamCaption}\item[{string}]{config}{}\end{DoxyParamCaption})}
+
+
+
+从json字符串加载配置 Load Configuration data from json string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_mgr_audio_ae4d862401aa238b6a09d5a33c562a1fe}{Mgr\+Audio}}, \mbox{\hyperlink{class_mgr_locale_af555d6c89b589e9f875d5d1ea14b9383}{Mgr\+Locale}}, and \mbox{\hyperlink{class_mgr_screen_ab8c21e6cb9d5eb73b004fb6e838a2ef8}{Mgr\+Screen}}.
+
+\Hypertarget{interface_i_save_data_a9bc0f8a6fd8143f4a0b371db48eb8f95}\index{ISaveData@{ISaveData}!NewData@{NewData}}
+\index{NewData@{NewData}!ISaveData@{ISaveData}}
+\doxysubsubsection{\texorpdfstring{NewData()}{NewData()}}
+{\footnotesize\ttfamily \label{interface_i_save_data_a9bc0f8a6fd8143f4a0b371db48eb8f95} 
+void ISave\+Data.\+New\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+新建配置 New Configuration data 
+
+
+
+Implemented in \mbox{\hyperlink{class_mgr_audio_aba18d08492f474b413e13f34a6f744fc}{Mgr\+Audio}}, \mbox{\hyperlink{class_mgr_locale_ad004dcbaa5d95f57420dc4b36680ccc0}{Mgr\+Locale}}, and \mbox{\hyperlink{class_mgr_screen_a31839ed0bc110e9bd01f0f3de25cee14}{Mgr\+Screen}}.
+
+\Hypertarget{interface_i_save_data_a530d1f6d2de1754270ac799cf501d6e5}\index{ISaveData@{ISaveData}!SaveData@{SaveData}}
+\index{SaveData@{SaveData}!ISaveData@{ISaveData}}
+\doxysubsubsection{\texorpdfstring{SaveData()}{SaveData()}}
+{\footnotesize\ttfamily \label{interface_i_save_data_a530d1f6d2de1754270ac799cf501d6e5} 
+string ISave\+Data.\+Save\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+保存配置为json字符串 Save Configuration data as json string 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_mgr_audio_a4563ae286e3e614f7c8eae9d821c3bec}{Mgr\+Audio}}, \mbox{\hyperlink{class_mgr_locale_abf31373c87465b1822e926465cdf13f4}{Mgr\+Locale}}, and \mbox{\hyperlink{class_mgr_screen_a5d445b8495bb6980998e4ca4fe26fa95}{Mgr\+Screen}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Basic\+Framework/\+Frame\+Base/ISave\+Data.\+cs\end{DoxyCompactItemize}

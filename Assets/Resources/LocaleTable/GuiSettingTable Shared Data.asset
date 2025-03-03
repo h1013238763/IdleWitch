@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: GuiSettingTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: GuiSettingTable
+  m_TableCollectionNameGuidString: df6981db375189049a68e17a2208794c
+  m_Entries:
+  - m_Id: 52128530432
+    m_Key: volume_title_master
+    m_Metadata:
+      m_Items: []
+  - m_Id: 209284907008
+    m_Key: volume_title_bgm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 372455915520
+    m_Key: volume_title_sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 521135603712
+    m_Key: volume_title_envir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 722822905856
+    m_Key: drop_title_resolution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 849851596800
+    m_Key: text_screen_full
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1109852307456
+    m_Key: text_screen_borderless
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1333693923328
+    m_Key: text_screen_window
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3430539739136
+    m_Key: btn_text_confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3660479873024
+    m_Key: btn_text_default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3922456100864
+    m_Key: btn_text_cancel
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 5144492996601315410
+  references:
+    version: 2
+    RefIds:
+    - rid: 5144492996601315410
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1738803912710

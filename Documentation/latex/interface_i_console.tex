@@ -1,0 +1,72 @@
+\doxysection{IConsole Interface Reference}
+\hypertarget{interface_i_console}{}\label{interface_i_console}\index{IConsole@{IConsole}}
+
+
+控制台接口 Console interface  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_i_console_ad01062daff018ea91c4b766816fd3565}{Register\+Command}} (string command\+\_\+class)
+\begin{DoxyCompactList}\small\item\em 注册主命令至控制台 Register the main command to the console \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_i_console_ad68c6e9170daa6c38bebf0637f2a20c0}{Unregister\+Command}} (string command\+\_\+class)
+\begin{DoxyCompactList}\small\item\em 删除命令至控制台 Unregister the main command to console \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_i_console_a397a5a44e4890b05ea0339400c07e0b6}{Handle\+Command}} (string\mbox{[}$\,$\mbox{]} command)
+\begin{DoxyCompactList}\small\item\em 处理命令 Handle command \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+控制台接口 Console interface 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_i_console_a397a5a44e4890b05ea0339400c07e0b6}\index{IConsole@{IConsole}!HandleCommand@{HandleCommand}}
+\index{HandleCommand@{HandleCommand}!IConsole@{IConsole}}
+\doxysubsubsection{\texorpdfstring{HandleCommand()}{HandleCommand()}}
+{\footnotesize\ttfamily \label{interface_i_console_a397a5a44e4890b05ea0339400c07e0b6} 
+void IConsole.\+Handle\+Command (\begin{DoxyParamCaption}\item[{string\mbox{[}$\,$\mbox{]}}]{command}{}\end{DoxyParamCaption})}
+
+
+
+处理命令 Handle command 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & 命令语句 Command statement \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_i_console_ad01062daff018ea91c4b766816fd3565}\index{IConsole@{IConsole}!RegisterCommand@{RegisterCommand}}
+\index{RegisterCommand@{RegisterCommand}!IConsole@{IConsole}}
+\doxysubsubsection{\texorpdfstring{RegisterCommand()}{RegisterCommand()}}
+{\footnotesize\ttfamily \label{interface_i_console_ad01062daff018ea91c4b766816fd3565} 
+void IConsole.\+Register\+Command (\begin{DoxyParamCaption}\item[{string}]{command\+\_\+class}{}\end{DoxyParamCaption})}
+
+
+
+注册主命令至控制台 Register the main command to the console 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+\_\+class} & 主命令语句 Main command statement \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_i_console_ad68c6e9170daa6c38bebf0637f2a20c0}\index{IConsole@{IConsole}!UnregisterCommand@{UnregisterCommand}}
+\index{UnregisterCommand@{UnregisterCommand}!IConsole@{IConsole}}
+\doxysubsubsection{\texorpdfstring{UnregisterCommand()}{UnregisterCommand()}}
+{\footnotesize\ttfamily \label{interface_i_console_ad68c6e9170daa6c38bebf0637f2a20c0} 
+void IConsole.\+Unregister\+Command (\begin{DoxyParamCaption}\item[{string}]{command\+\_\+class}{}\end{DoxyParamCaption})}
+
+
+
+删除命令至控制台 Unregister the main command to console 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+\_\+class} & 主命令语句 Main command statement \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Basic\+Framework/\+Frame\+Base/IConsole.\+cs\end{DoxyCompactItemize}

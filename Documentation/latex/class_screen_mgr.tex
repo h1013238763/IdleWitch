@@ -1,0 +1,159 @@
+\doxysection{Screen\+Mgr Class Reference}
+\hypertarget{class_screen_mgr}{}\label{class_screen_mgr}\index{ScreenMgr@{ScreenMgr}}
+
+
+画面配置管理器 Screen configuration manager  
+
+
+Inheritance diagram for Screen\+Mgr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_screen_mgr}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_screen_mgr_1_1_screen_config}{Screen\+Config}}
+\begin{DoxyCompactList}\small\item\em 画面配置数据 Screen configuration data \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_screen_mgr_aa8c821b5237706fcf8ee601db9a11295}{Set\+Full\+Screen\+Mode}} (Screen\+Mode mode)
+\begin{DoxyCompactList}\small\item\em 设置全屏模式 Set full screen mode \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{class_screen_mgr_a48a2649f6eb9a21e1d6bdfbc8e4f84f9}{Get\+Resolutions}} ()
+\begin{DoxyCompactList}\small\item\em 获取所有可用分辨率 Get all available resolutions \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_screen_mgr_af0f41492420fa0f08ead1da1e73aa0d2}{Set\+Resolution}} (int index)
+\begin{DoxyCompactList}\small\item\em 设置分辨率 Set resolution \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_screen_mgr_a0426f44e8918782df2199a98c06d9e80}{New\+Data}} ()
+\begin{DoxyCompactList}\small\item\em 新建画面数据 New screen data \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_screen_mgr_a32202d956f21128f05664b4844e2e62b}{Save\+Data}} ()
+\begin{DoxyCompactList}\small\item\em 保存画面数据 Save screen data \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_screen_mgr_ab58bf58c43385d6dc19cc9ede99a1183}{Load\+Data}} (string json\+\_\+data)
+\begin{DoxyCompactList}\small\item\em 读取画面数据 Read screen data \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_screen_mgr_a87f7cbc3da60f81b13f749ffe19b3af9}{Apply\+Data}} ()
+\begin{DoxyCompactList}\small\item\em 应用配置 Apply Configuration data \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_mgr_base-1-g}{Mgr\+Base$<$ T $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+static T \mbox{\hyperlink{class_mgr_base-1-g_a99b0e45113c7429d2e1d551e563c36f8}{Mgr}} ()
+\begin{DoxyCompactList}\small\item\em 获取类单例对象 Get Class Singleton Object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+画面配置管理器 Screen configuration manager 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_screen_mgr_a87f7cbc3da60f81b13f749ffe19b3af9}\index{ScreenMgr@{ScreenMgr}!ApplyData@{ApplyData}}
+\index{ApplyData@{ApplyData}!ScreenMgr@{ScreenMgr}}
+\doxysubsubsection{\texorpdfstring{ApplyData()}{ApplyData()}}
+{\footnotesize\ttfamily \label{class_screen_mgr_a87f7cbc3da60f81b13f749ffe19b3af9} 
+void Screen\+Mgr.\+Apply\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+应用配置 Apply Configuration data 
+
+
+
+Implements \mbox{\hyperlink{interface_i_save_data_ac20bc7989daec37828b04c8f54470414}{ISave\+Data}}.
+
+\Hypertarget{class_screen_mgr_a48a2649f6eb9a21e1d6bdfbc8e4f84f9}\index{ScreenMgr@{ScreenMgr}!GetResolutions@{GetResolutions}}
+\index{GetResolutions@{GetResolutions}!ScreenMgr@{ScreenMgr}}
+\doxysubsubsection{\texorpdfstring{GetResolutions()}{GetResolutions()}}
+{\footnotesize\ttfamily \label{class_screen_mgr_a48a2649f6eb9a21e1d6bdfbc8e4f84f9} 
+List$<$ string $>$ Screen\+Mgr.\+Get\+Resolutions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取所有可用分辨率 Get all available resolutions 
+
+\begin{DoxyReturn}{Returns}
+分辨率列表 Resolution list 
+\end{DoxyReturn}
+\Hypertarget{class_screen_mgr_ab58bf58c43385d6dc19cc9ede99a1183}\index{ScreenMgr@{ScreenMgr}!LoadData@{LoadData}}
+\index{LoadData@{LoadData}!ScreenMgr@{ScreenMgr}}
+\doxysubsubsection{\texorpdfstring{LoadData()}{LoadData()}}
+{\footnotesize\ttfamily \label{class_screen_mgr_ab58bf58c43385d6dc19cc9ede99a1183} 
+void Screen\+Mgr.\+Load\+Data (\begin{DoxyParamCaption}\item[{string}]{json\+\_\+data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+读取画面数据 Read screen data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json\+\_\+data} & 画面数据\+Json screen data Json \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_save_data_adb3a45aaba0a80ebd328ebb6fe67b90e}{ISave\+Data}}.
+
+\Hypertarget{class_screen_mgr_a0426f44e8918782df2199a98c06d9e80}\index{ScreenMgr@{ScreenMgr}!NewData@{NewData}}
+\index{NewData@{NewData}!ScreenMgr@{ScreenMgr}}
+\doxysubsubsection{\texorpdfstring{NewData()}{NewData()}}
+{\footnotesize\ttfamily \label{class_screen_mgr_a0426f44e8918782df2199a98c06d9e80} 
+void Screen\+Mgr.\+New\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+新建画面数据 New screen data 
+
+
+
+Implements \mbox{\hyperlink{interface_i_save_data_a9bc0f8a6fd8143f4a0b371db48eb8f95}{ISave\+Data}}.
+
+\Hypertarget{class_screen_mgr_a32202d956f21128f05664b4844e2e62b}\index{ScreenMgr@{ScreenMgr}!SaveData@{SaveData}}
+\index{SaveData@{SaveData}!ScreenMgr@{ScreenMgr}}
+\doxysubsubsection{\texorpdfstring{SaveData()}{SaveData()}}
+{\footnotesize\ttfamily \label{class_screen_mgr_a32202d956f21128f05664b4844e2e62b} 
+string Screen\+Mgr.\+Save\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+保存画面数据 Save screen data 
+
+\begin{DoxyReturn}{Returns}
+画面数据\+Json screen data Json 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_save_data_a530d1f6d2de1754270ac799cf501d6e5}{ISave\+Data}}.
+
+\Hypertarget{class_screen_mgr_aa8c821b5237706fcf8ee601db9a11295}\index{ScreenMgr@{ScreenMgr}!SetFullScreenMode@{SetFullScreenMode}}
+\index{SetFullScreenMode@{SetFullScreenMode}!ScreenMgr@{ScreenMgr}}
+\doxysubsubsection{\texorpdfstring{SetFullScreenMode()}{SetFullScreenMode()}}
+{\footnotesize\ttfamily \label{class_screen_mgr_aa8c821b5237706fcf8ee601db9a11295} 
+void Screen\+Mgr.\+Set\+Full\+Screen\+Mode (\begin{DoxyParamCaption}\item[{Screen\+Mode}]{mode}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置全屏模式 Set full screen mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & 屏幕模式 Screen mode \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_screen_mgr_af0f41492420fa0f08ead1da1e73aa0d2}\index{ScreenMgr@{ScreenMgr}!SetResolution@{SetResolution}}
+\index{SetResolution@{SetResolution}!ScreenMgr@{ScreenMgr}}
+\doxysubsubsection{\texorpdfstring{SetResolution()}{SetResolution()}}
+{\footnotesize\ttfamily \label{class_screen_mgr_af0f41492420fa0f08ead1da1e73aa0d2} 
+void Screen\+Mgr.\+Set\+Resolution (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置分辨率 Set resolution 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & 分辨率索引 Resolution index \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Basic\+Framework/\+Unity\+Frame/Screen\+Mgr.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,28 @@
+var annotated_dup =
+[
+    [ "GuiBase", "class_gui_base.html", "class_gui_base" ],
+    [ "GuiConfirm", "class_gui_confirm.html", "class_gui_confirm" ],
+    [ "GuiLoadGame", "class_gui_load_game.html", null ],
+    [ "GuiLoading", "class_gui_loading.html", "class_gui_loading" ],
+    [ "GuiSetting", "class_gui_setting.html", "class_gui_setting" ],
+    [ "GuiTitle", "class_gui_title.html", "class_gui_title" ],
+    [ "IConsole", "interface_i_console.html", "interface_i_console" ],
+    [ "ISaveData", "interface_i_save_data.html", "interface_i_save_data" ],
+    [ "MgrAudio", "class_mgr_audio.html", "class_mgr_audio" ],
+    [ "MgrBase< T >", "class_mgr_base-1-g.html", null ],
+    [ "MgrBaseMono< T >", "class_mgr_base_mono-1-g.html", null ],
+    [ "MgrConfig", "class_mgr_config.html", "class_mgr_config" ],
+    [ "MgrConsole", "class_mgr_console.html", null ],
+    [ "MgrEvent", "class_mgr_event.html", "class_mgr_event" ],
+    [ "MgrGame", "class_mgr_game.html", null ],
+    [ "MgrGui", "class_mgr_gui.html", "class_mgr_gui" ],
+    [ "MgrJson", "class_mgr_json.html", "class_mgr_json" ],
+    [ "MgrLocale", "class_mgr_locale.html", "class_mgr_locale" ],
+    [ "MgrMono", "class_mgr_mono.html", "class_mgr_mono" ],
+    [ "MgrPool", "class_mgr_pool.html", "class_mgr_pool" ],
+    [ "MgrResource", "class_mgr_resource.html", "class_mgr_resource" ],
+    [ "MgrScene", "class_mgr_scene.html", "class_mgr_scene" ],
+    [ "MgrScreen", "class_mgr_screen.html", "class_mgr_screen" ],
+    [ "SceneBase", "class_scene_base.html", "class_scene_base" ],
+    [ "SceneTitle", "class_scene_title.html", null ]
+];

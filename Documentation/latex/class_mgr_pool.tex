@@ -1,0 +1,86 @@
+\doxysection{Mgr\+Pool Class Reference}
+\hypertarget{class_mgr_pool}{}\label{class_mgr_pool}\index{MgrPool@{MgrPool}}
+
+
+对象池管理器 Object Pool Manager  
+
+
+Inheritance diagram for Mgr\+Pool\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mgr_pool}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_mgr_pool_a7c1c6be10b0b7d430369a65729f63333}{Push\+Obj}} (string name, Game\+Object obj)
+\begin{DoxyCompactList}\small\item\em 往对象池中放入对象 Put object into object pool \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mgr_pool_a0acf1c842cff97cb742b9037616bf760}{Pop\+Obj}} (string name, Unity\+Action$<$ Game\+Object $>$ call\+Back)
+\begin{DoxyCompactList}\small\item\em 从对象池中取出对象 Get object from object pool \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mgr_pool_aee204b97e9460fc6eb8494c49d4ad3dd}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em 清理对象池 Clear object pool \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_mgr_base-1-g}{Mgr\+Base$<$ T $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+static T \mbox{\hyperlink{class_mgr_base-1-g_a99b0e45113c7429d2e1d551e563c36f8}{Mgr}} ()
+\begin{DoxyCompactList}\small\item\em 获取类单例对象 Get Class Singleton Object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+对象池管理器 Object Pool Manager 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mgr_pool_aee204b97e9460fc6eb8494c49d4ad3dd}\index{MgrPool@{MgrPool}!Clear@{Clear}}
+\index{Clear@{Clear}!MgrPool@{MgrPool}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily \label{class_mgr_pool_aee204b97e9460fc6eb8494c49d4ad3dd} 
+void Mgr\+Pool.\+Clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+清理对象池 Clear object pool 
+
+// \Hypertarget{class_mgr_pool_a0acf1c842cff97cb742b9037616bf760}\index{MgrPool@{MgrPool}!PopObj@{PopObj}}
+\index{PopObj@{PopObj}!MgrPool@{MgrPool}}
+\doxysubsubsection{\texorpdfstring{PopObj()}{PopObj()}}
+{\footnotesize\ttfamily \label{class_mgr_pool_a0acf1c842cff97cb742b9037616bf760} 
+void Mgr\+Pool.\+Pop\+Obj (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{Unity\+Action$<$ Game\+Object $>$}]{call\+Back}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+从对象池中取出对象 Get object from object pool 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & 对象名 object name\\
+\hline
+{\em call\+Back} & 回调函数 callback function\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+被取出的对象 The object that was pop
+\end{DoxyReturn}
+\Hypertarget{class_mgr_pool_a7c1c6be10b0b7d430369a65729f63333}\index{MgrPool@{MgrPool}!PushObj@{PushObj}}
+\index{PushObj@{PushObj}!MgrPool@{MgrPool}}
+\doxysubsubsection{\texorpdfstring{PushObj()}{PushObj()}}
+{\footnotesize\ttfamily \label{class_mgr_pool_a7c1c6be10b0b7d430369a65729f63333} 
+void Mgr\+Pool.\+Push\+Obj (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{Game\+Object}]{obj}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+往对象池中放入对象 Put object into object pool 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & 对象名 object name\\
+\hline
+{\em obj} & 对象 object\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Basic\+Framework/\+Resource\+Frame/Mgr\+Pool.\+cs\end{DoxyCompactItemize}

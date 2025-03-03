@@ -1,0 +1,255 @@
+\doxysection{Mgr\+Audio Class Reference}
+\hypertarget{class_mgr_audio}{}\label{class_mgr_audio}\index{MgrAudio@{MgrAudio}}
+
+
+音频管理器 Audio Manager  
+
+
+Inheritance diagram for Mgr\+Audio\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_mgr_audio}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_mgr_audio_a37dcc243c64c488014b4075ddbb95171}{Play\+Audio}} (Audio\+Class audio\+\_\+class, string name, bool is\+\_\+loop, Unity\+Action$<$ Audio\+Source $>$ call\+Back=null)
+\begin{DoxyCompactList}\small\item\em 播放音效片 Play audio clip \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mgr_audio_a430b7deb1e8d2bc68419497d4210d62b}{Change\+Master\+Volume}} (float volume)
+\begin{DoxyCompactList}\small\item\em 修改主音量 Change master volume \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mgr_audio_a45538ada0c331e6cb1f4b070587696ca}{Change\+Volume}} (Audio\+Class audio\+\_\+class, float volume)
+\begin{DoxyCompactList}\small\item\em 修改音量 Change volume \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_mgr_audio_ae22e397dc49045235c17c4fb0e193f9a}{Get\+Master\+Volume}} ()
+\begin{DoxyCompactList}\small\item\em 读取主音量 Read master volume \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_mgr_audio_ac339ae305f8b0a0dd45d21819af2b920}{Get\+Volume}} (Audio\+Class audio\+\_\+class)
+\begin{DoxyCompactList}\small\item\em 读取音量 Read volume \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mgr_audio_a6b016139f90052cffdbb1a2d159af04d}{Pasue\+Audio}} (Audio\+Source audio\+\_\+source)
+\begin{DoxyCompactList}\small\item\em 暂停音效片 Pause audio clip \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mgr_audio_aa51725c2cf50a53f537dedcd6577578e}{Stop\+Audio}} (Audio\+Class audio\+\_\+class, Audio\+Source audio\+\_\+source)
+\begin{DoxyCompactList}\small\item\em 停止音效片 Stop audio clip \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mgr_audio_a56a0354e66c1807238c0725516f51ec1}{Stop\+Audio}} (Audio\+Class audio\+\_\+class)
+\begin{DoxyCompactList}\small\item\em 停止所有对应类型音效片 Stop all audio clips of corresponding type \end{DoxyCompactList}\item 
+\Hypertarget{class_mgr_audio_acf46f01c866e9cd5bd324d74eb983819}\label{class_mgr_audio_acf46f01c866e9cd5bd324d74eb983819} 
+void {\bfseries Stop\+Audio} ()
+\begin{DoxyCompactList}\small\item\em 停止所有音效片 Stop all audio clips \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mgr_audio_aba18d08492f474b413e13f34a6f744fc}{New\+Data}} ()
+\begin{DoxyCompactList}\small\item\em 创建新配置数据 Create new configuration data \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_mgr_audio_a4563ae286e3e614f7c8eae9d821c3bec}{Save\+Data}} ()
+\begin{DoxyCompactList}\small\item\em 保存配置数据 Save configuration data \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mgr_audio_ae4d862401aa238b6a09d5a33c562a1fe}{Load\+Data}} (string config\+\_\+json)
+\begin{DoxyCompactList}\small\item\em 加载配置数据 Load configuration data \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mgr_audio_a8e5f026b90d1c71e30d9f76e978d653b}{Apply\+Data}} ()
+\begin{DoxyCompactList}\small\item\em 应用配置数据 Apply config data \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_mgr_base_mono-1-g}{Mgr\+Base\+Mono$<$ T $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+static T \mbox{\hyperlink{class_mgr_base_mono-1-g_ad93b220c723b9ec899592e73112cd4df}{Mgr}} ()
+\begin{DoxyCompactList}\small\item\em 获取类单例对象 Get Class Singleton Object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+音频管理器 Audio Manager 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mgr_audio_a8e5f026b90d1c71e30d9f76e978d653b}\index{MgrAudio@{MgrAudio}!ApplyData@{ApplyData}}
+\index{ApplyData@{ApplyData}!MgrAudio@{MgrAudio}}
+\doxysubsubsection{\texorpdfstring{ApplyData()}{ApplyData()}}
+{\footnotesize\ttfamily \label{class_mgr_audio_a8e5f026b90d1c71e30d9f76e978d653b} 
+void Mgr\+Audio.\+Apply\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+应用配置数据 Apply config data 
+
+
+
+Implements \mbox{\hyperlink{interface_i_save_data_ac20bc7989daec37828b04c8f54470414}{ISave\+Data}}.
+
+\Hypertarget{class_mgr_audio_a430b7deb1e8d2bc68419497d4210d62b}\index{MgrAudio@{MgrAudio}!ChangeMasterVolume@{ChangeMasterVolume}}
+\index{ChangeMasterVolume@{ChangeMasterVolume}!MgrAudio@{MgrAudio}}
+\doxysubsubsection{\texorpdfstring{ChangeMasterVolume()}{ChangeMasterVolume()}}
+{\footnotesize\ttfamily \label{class_mgr_audio_a430b7deb1e8d2bc68419497d4210d62b} 
+void Mgr\+Audio.\+Change\+Master\+Volume (\begin{DoxyParamCaption}\item[{float}]{volume}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+修改主音量 Change master volume 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & 修改值 (0\texorpdfstring{$\sim$}{\string~}1) Change value (0\texorpdfstring{$\sim$}{\string~}1)\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mgr_audio_a45538ada0c331e6cb1f4b070587696ca}\index{MgrAudio@{MgrAudio}!ChangeVolume@{ChangeVolume}}
+\index{ChangeVolume@{ChangeVolume}!MgrAudio@{MgrAudio}}
+\doxysubsubsection{\texorpdfstring{ChangeVolume()}{ChangeVolume()}}
+{\footnotesize\ttfamily \label{class_mgr_audio_a45538ada0c331e6cb1f4b070587696ca} 
+void Mgr\+Audio.\+Change\+Volume (\begin{DoxyParamCaption}\item[{Audio\+Class}]{audio\+\_\+class}{, }\item[{float}]{volume}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+修改音量 Change volume 
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+\_\+class} & 音效片类型 Audio clip type\\
+\hline
+{\em volume} & 修改值(0\texorpdfstring{$\sim$}{\string~}1) Change value (0\texorpdfstring{$\sim$}{\string~}1)\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mgr_audio_ae22e397dc49045235c17c4fb0e193f9a}\index{MgrAudio@{MgrAudio}!GetMasterVolume@{GetMasterVolume}}
+\index{GetMasterVolume@{GetMasterVolume}!MgrAudio@{MgrAudio}}
+\doxysubsubsection{\texorpdfstring{GetMasterVolume()}{GetMasterVolume()}}
+{\footnotesize\ttfamily \label{class_mgr_audio_ae22e397dc49045235c17c4fb0e193f9a} 
+float Mgr\+Audio.\+Get\+Master\+Volume (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+读取主音量 Read master volume 
+
+\begin{DoxyReturn}{Returns}
+音量 Volume
+\end{DoxyReturn}
+\Hypertarget{class_mgr_audio_ac339ae305f8b0a0dd45d21819af2b920}\index{MgrAudio@{MgrAudio}!GetVolume@{GetVolume}}
+\index{GetVolume@{GetVolume}!MgrAudio@{MgrAudio}}
+\doxysubsubsection{\texorpdfstring{GetVolume()}{GetVolume()}}
+{\footnotesize\ttfamily \label{class_mgr_audio_ac339ae305f8b0a0dd45d21819af2b920} 
+float Mgr\+Audio.\+Get\+Volume (\begin{DoxyParamCaption}\item[{Audio\+Class}]{audio\+\_\+class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+读取音量 Read volume 
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+\_\+class} & 音效片类型 Audio clip type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+音量 Volume
+\end{DoxyReturn}
+\Hypertarget{class_mgr_audio_ae4d862401aa238b6a09d5a33c562a1fe}\index{MgrAudio@{MgrAudio}!LoadData@{LoadData}}
+\index{LoadData@{LoadData}!MgrAudio@{MgrAudio}}
+\doxysubsubsection{\texorpdfstring{LoadData()}{LoadData()}}
+{\footnotesize\ttfamily \label{class_mgr_audio_ae4d862401aa238b6a09d5a33c562a1fe} 
+void Mgr\+Audio.\+Load\+Data (\begin{DoxyParamCaption}\item[{string}]{config\+\_\+json}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+加载配置数据 Load configuration data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em config\+\_\+json} & 配置\+Json Config Json\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_save_data_adb3a45aaba0a80ebd328ebb6fe67b90e}{ISave\+Data}}.
+
+\Hypertarget{class_mgr_audio_aba18d08492f474b413e13f34a6f744fc}\index{MgrAudio@{MgrAudio}!NewData@{NewData}}
+\index{NewData@{NewData}!MgrAudio@{MgrAudio}}
+\doxysubsubsection{\texorpdfstring{NewData()}{NewData()}}
+{\footnotesize\ttfamily \label{class_mgr_audio_aba18d08492f474b413e13f34a6f744fc} 
+void Mgr\+Audio.\+New\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+创建新配置数据 Create new configuration data 
+
+
+
+Implements \mbox{\hyperlink{interface_i_save_data_a9bc0f8a6fd8143f4a0b371db48eb8f95}{ISave\+Data}}.
+
+\Hypertarget{class_mgr_audio_a6b016139f90052cffdbb1a2d159af04d}\index{MgrAudio@{MgrAudio}!PasueAudio@{PasueAudio}}
+\index{PasueAudio@{PasueAudio}!MgrAudio@{MgrAudio}}
+\doxysubsubsection{\texorpdfstring{PasueAudio()}{PasueAudio()}}
+{\footnotesize\ttfamily \label{class_mgr_audio_a6b016139f90052cffdbb1a2d159af04d} 
+void Mgr\+Audio.\+Pasue\+Audio (\begin{DoxyParamCaption}\item[{Audio\+Source}]{audio\+\_\+source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+暂停音效片 Pause audio clip 
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+\_\+source} & 音效片 Audio clip\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mgr_audio_a37dcc243c64c488014b4075ddbb95171}\index{MgrAudio@{MgrAudio}!PlayAudio@{PlayAudio}}
+\index{PlayAudio@{PlayAudio}!MgrAudio@{MgrAudio}}
+\doxysubsubsection{\texorpdfstring{PlayAudio()}{PlayAudio()}}
+{\footnotesize\ttfamily \label{class_mgr_audio_a37dcc243c64c488014b4075ddbb95171} 
+void Mgr\+Audio.\+Play\+Audio (\begin{DoxyParamCaption}\item[{Audio\+Class}]{audio\+\_\+class}{, }\item[{string}]{name}{, }\item[{bool}]{is\+\_\+loop}{, }\item[{Unity\+Action$<$ Audio\+Source $>$}]{call\+Back}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+播放音效片 Play audio clip 
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+\_\+class} & 音效片类型 Audio clip type\\
+\hline
+{\em name} & 音效片名称 Audio clip name\\
+\hline
+{\em is\+\_\+loop} & 是否循环播放 Whether to loop\\
+\hline
+{\em call\+Back} & 回调函数 Callback function\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mgr_audio_a4563ae286e3e614f7c8eae9d821c3bec}\index{MgrAudio@{MgrAudio}!SaveData@{SaveData}}
+\index{SaveData@{SaveData}!MgrAudio@{MgrAudio}}
+\doxysubsubsection{\texorpdfstring{SaveData()}{SaveData()}}
+{\footnotesize\ttfamily \label{class_mgr_audio_a4563ae286e3e614f7c8eae9d821c3bec} 
+string Mgr\+Audio.\+Save\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+保存配置数据 Save configuration data 
+
+\begin{DoxyReturn}{Returns}
+配置数据\+Json Configuration data Json
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_i_save_data_a530d1f6d2de1754270ac799cf501d6e5}{ISave\+Data}}.
+
+\Hypertarget{class_mgr_audio_a56a0354e66c1807238c0725516f51ec1}\index{MgrAudio@{MgrAudio}!StopAudio@{StopAudio}}
+\index{StopAudio@{StopAudio}!MgrAudio@{MgrAudio}}
+\doxysubsubsection{\texorpdfstring{StopAudio()}{StopAudio()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_mgr_audio_a56a0354e66c1807238c0725516f51ec1} 
+void Mgr\+Audio.\+Stop\+Audio (\begin{DoxyParamCaption}\item[{Audio\+Class}]{audio\+\_\+class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+停止所有对应类型音效片 Stop all audio clips of corresponding type 
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+\_\+class} & 音效片类型 Audio clip type\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mgr_audio_aa51725c2cf50a53f537dedcd6577578e}\index{MgrAudio@{MgrAudio}!StopAudio@{StopAudio}}
+\index{StopAudio@{StopAudio}!MgrAudio@{MgrAudio}}
+\doxysubsubsection{\texorpdfstring{StopAudio()}{StopAudio()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_mgr_audio_aa51725c2cf50a53f537dedcd6577578e} 
+void Mgr\+Audio.\+Stop\+Audio (\begin{DoxyParamCaption}\item[{Audio\+Class}]{audio\+\_\+class}{, }\item[{Audio\+Source}]{audio\+\_\+source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+停止音效片 Stop audio clip 
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+\_\+class} & 音效片类型 Audio clip type\\
+\hline
+{\em audio\+\_\+source} & 音效片 Audio clip\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Basic\+Framework/\+Unity\+Frame/Mgr\+Audio.\+cs\end{DoxyCompactItemize}

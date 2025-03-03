@@ -1,0 +1,164 @@
+\doxysection{Mono\+Mgr Class Reference}
+\hypertarget{class_mono_mgr}{}\label{class_mono_mgr}\index{MonoMgr@{MonoMgr}}
+
+
+Mono协同管理器 Mono Coroutine Manager.  
+
+
+Inheritance diagram for Mono\+Mgr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_mono_mgr}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_mono_mgr_a03f14735cd78161c299151e3b90c341e}{Add\+Update\+Event}} (Unity\+Action action)
+\begin{DoxyCompactList}\small\item\em 添加\+Update函数 Add Update Function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mono_mgr_ae88da2ae4feb4514417e7799f1b75148}{Del\+Update\+Event}} (Unity\+Action action)
+\begin{DoxyCompactList}\small\item\em 移除\+Update函数 Remove Update Function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mono_mgr_afa5fa6abfa4102ef574f15f597fb6444}{Add\+Fixed\+Update\+Event}} (Unity\+Action action)
+\begin{DoxyCompactList}\small\item\em 添加\+Fixed\+Update函数 Add Fixed\+Update Function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mono_mgr_a890140b88e2546fecf3ad539879fcc7f}{Del\+Fixed\+Update\+Event}} (Unity\+Action action)
+\begin{DoxyCompactList}\small\item\em 移除\+Fixed\+Update函数 Remove Fixed\+Update Function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mono_mgr_aaf0b2fcee0f7fbaf4bd0f650dbce25ba}{Add\+Late\+Update\+Event}} (Unity\+Action action)
+\begin{DoxyCompactList}\small\item\em 添加\+Late\+Update函数 Add Late\+Update Function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mono_mgr_ac210f6d2cdfd0ece4cef878e022d4497}{Del\+Late\+Update\+Event}} (Unity\+Action action)
+\begin{DoxyCompactList}\small\item\em 移除\+Late\+Update函数 Remove Late\+Update Function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mono_mgr_ade21a847129fbde0a44553efc75d38ff}{Start\+Coroutine}} (IEnumerator routine)
+\begin{DoxyCompactList}\small\item\em 开启协程 Start Coroutine \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mono_mgr_aa4efdc8bec19ee4fd69d7494811aef69}\label{class_mono_mgr_aa4efdc8bec19ee4fd69d7494811aef69} 
+Unity\+Action {\bfseries update\+\_\+event}
+\item 
+\Hypertarget{class_mono_mgr_ad1992feb1fefb22c717a34ab91441a96}\label{class_mono_mgr_ad1992feb1fefb22c717a34ab91441a96} 
+Unity\+Action {\bfseries fixed\+\_\+update\+\_\+event}
+\item 
+\Hypertarget{class_mono_mgr_abf487d66e051203fd74c1b40b094e12c}\label{class_mono_mgr_abf487d66e051203fd74c1b40b094e12c} 
+Unity\+Action {\bfseries late\+\_\+update\+\_\+event}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_mgr_base_mono-1-g}{Mgr\+Base\+Mono$<$ T $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+static T \mbox{\hyperlink{class_mgr_base_mono-1-g_ad93b220c723b9ec899592e73112cd4df}{Mgr}} ()
+\begin{DoxyCompactList}\small\item\em 获取类单例对象 Get Class Singleton Object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Mono协同管理器 Mono Coroutine Manager. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mono_mgr_afa5fa6abfa4102ef574f15f597fb6444}\index{MonoMgr@{MonoMgr}!AddFixedUpdateEvent@{AddFixedUpdateEvent}}
+\index{AddFixedUpdateEvent@{AddFixedUpdateEvent}!MonoMgr@{MonoMgr}}
+\doxysubsubsection{\texorpdfstring{AddFixedUpdateEvent()}{AddFixedUpdateEvent()}}
+{\footnotesize\ttfamily \label{class_mono_mgr_afa5fa6abfa4102ef574f15f597fb6444} 
+void Mono\+Mgr.\+Add\+Fixed\+Update\+Event (\begin{DoxyParamCaption}\item[{Unity\+Action}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+添加\+Fixed\+Update函数 Add Fixed\+Update Function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & Update函数 update function \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mono_mgr_aaf0b2fcee0f7fbaf4bd0f650dbce25ba}\index{MonoMgr@{MonoMgr}!AddLateUpdateEvent@{AddLateUpdateEvent}}
+\index{AddLateUpdateEvent@{AddLateUpdateEvent}!MonoMgr@{MonoMgr}}
+\doxysubsubsection{\texorpdfstring{AddLateUpdateEvent()}{AddLateUpdateEvent()}}
+{\footnotesize\ttfamily \label{class_mono_mgr_aaf0b2fcee0f7fbaf4bd0f650dbce25ba} 
+void Mono\+Mgr.\+Add\+Late\+Update\+Event (\begin{DoxyParamCaption}\item[{Unity\+Action}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+添加\+Late\+Update函数 Add Late\+Update Function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & Update函数 update function \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mono_mgr_a03f14735cd78161c299151e3b90c341e}\index{MonoMgr@{MonoMgr}!AddUpdateEvent@{AddUpdateEvent}}
+\index{AddUpdateEvent@{AddUpdateEvent}!MonoMgr@{MonoMgr}}
+\doxysubsubsection{\texorpdfstring{AddUpdateEvent()}{AddUpdateEvent()}}
+{\footnotesize\ttfamily \label{class_mono_mgr_a03f14735cd78161c299151e3b90c341e} 
+void Mono\+Mgr.\+Add\+Update\+Event (\begin{DoxyParamCaption}\item[{Unity\+Action}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+添加\+Update函数 Add Update Function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & Update函数 update function \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mono_mgr_a890140b88e2546fecf3ad539879fcc7f}\index{MonoMgr@{MonoMgr}!DelFixedUpdateEvent@{DelFixedUpdateEvent}}
+\index{DelFixedUpdateEvent@{DelFixedUpdateEvent}!MonoMgr@{MonoMgr}}
+\doxysubsubsection{\texorpdfstring{DelFixedUpdateEvent()}{DelFixedUpdateEvent()}}
+{\footnotesize\ttfamily \label{class_mono_mgr_a890140b88e2546fecf3ad539879fcc7f} 
+void Mono\+Mgr.\+Del\+Fixed\+Update\+Event (\begin{DoxyParamCaption}\item[{Unity\+Action}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+移除\+Fixed\+Update函数 Remove Fixed\+Update Function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & Update函数 update function \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mono_mgr_ac210f6d2cdfd0ece4cef878e022d4497}\index{MonoMgr@{MonoMgr}!DelLateUpdateEvent@{DelLateUpdateEvent}}
+\index{DelLateUpdateEvent@{DelLateUpdateEvent}!MonoMgr@{MonoMgr}}
+\doxysubsubsection{\texorpdfstring{DelLateUpdateEvent()}{DelLateUpdateEvent()}}
+{\footnotesize\ttfamily \label{class_mono_mgr_ac210f6d2cdfd0ece4cef878e022d4497} 
+void Mono\+Mgr.\+Del\+Late\+Update\+Event (\begin{DoxyParamCaption}\item[{Unity\+Action}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+移除\+Late\+Update函数 Remove Late\+Update Function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & Update函数 update function \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mono_mgr_ae88da2ae4feb4514417e7799f1b75148}\index{MonoMgr@{MonoMgr}!DelUpdateEvent@{DelUpdateEvent}}
+\index{DelUpdateEvent@{DelUpdateEvent}!MonoMgr@{MonoMgr}}
+\doxysubsubsection{\texorpdfstring{DelUpdateEvent()}{DelUpdateEvent()}}
+{\footnotesize\ttfamily \label{class_mono_mgr_ae88da2ae4feb4514417e7799f1b75148} 
+void Mono\+Mgr.\+Del\+Update\+Event (\begin{DoxyParamCaption}\item[{Unity\+Action}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+移除\+Update函数 Remove Update Function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & Update函数 update function \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mono_mgr_ade21a847129fbde0a44553efc75d38ff}\index{MonoMgr@{MonoMgr}!StartCoroutine@{StartCoroutine}}
+\index{StartCoroutine@{StartCoroutine}!MonoMgr@{MonoMgr}}
+\doxysubsubsection{\texorpdfstring{StartCoroutine()}{StartCoroutine()}}
+{\footnotesize\ttfamily \label{class_mono_mgr_ade21a847129fbde0a44553efc75d38ff} 
+void Mono\+Mgr.\+Start\+Coroutine (\begin{DoxyParamCaption}\item[{IEnumerator}]{routine}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+开启协程 Start Coroutine 
+
+
+\begin{DoxyParams}{Parameters}
+{\em routine} & 协程函数 Coroutine Function \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Basic\+Framework/\+Resource\+Frame/Mono\+Mgr.\+cs\end{DoxyCompactItemize}

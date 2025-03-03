@@ -1,0 +1,97 @@
+\doxysection{Mgr\+Gui Class Reference}
+\hypertarget{class_mgr_gui}{}\label{class_mgr_gui}\index{MgrGui@{MgrGui}}
+
+
+GUI管理器 GUI Manager.  
+
+
+Inheritance diagram for Mgr\+Gui\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_mgr_gui}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_mgr_gui_a40ee3d019d77d17c343fcc64b5712088}{Show\+Gui$<$ T $>$}} (string gui\+\_\+name, int layer, Unity\+Action$<$ T $>$ call\+Back=null)
+\begin{DoxyCompactList}\small\item\em 加载\+GUI界面 load GUI panel \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mgr_gui_a797c374d89952a0fba3c84498fe24df9}{Hide\+Gui}} (string gui\+\_\+name)
+\begin{DoxyCompactList}\small\item\em 隐藏\+GUI界面 hide GUI panel \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_mgr_gui_a7c0ed40708aedfd6e222988d136ad35a}{Get\+Gui$<$ T $>$}} (string gui\+\_\+name)
+\begin{DoxyCompactList}\small\item\em 获取已显示面板 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_mgr_base_mono-1-g}{Mgr\+Base\+Mono$<$ T $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+static T \mbox{\hyperlink{class_mgr_base_mono-1-g_ad93b220c723b9ec899592e73112cd4df}{Mgr}} ()
+\begin{DoxyCompactList}\small\item\em 获取类单例对象 Get Class Singleton Object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+GUI管理器 GUI Manager. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mgr_gui_a7c0ed40708aedfd6e222988d136ad35a}\index{MgrGui@{MgrGui}!GetGui$<$ T $>$@{GetGui$<$ T $>$}}
+\index{GetGui$<$ T $>$@{GetGui$<$ T $>$}!MgrGui@{MgrGui}}
+\doxysubsubsection{\texorpdfstring{GetGui$<$ T $>$()}{GetGui< T >()}}
+{\footnotesize\ttfamily \label{class_mgr_gui_a7c0ed40708aedfd6e222988d136ad35a} 
+T Mgr\+Gui.\+Get\+Gui$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{gui\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取已显示面板 
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \mbox{\hyperlink{class_gui_base}{Gui\+Base}}}]\end{description}
+\end{Desc}
+\Hypertarget{class_mgr_gui_a797c374d89952a0fba3c84498fe24df9}\index{MgrGui@{MgrGui}!HideGui@{HideGui}}
+\index{HideGui@{HideGui}!MgrGui@{MgrGui}}
+\doxysubsubsection{\texorpdfstring{HideGui()}{HideGui()}}
+{\footnotesize\ttfamily \label{class_mgr_gui_a797c374d89952a0fba3c84498fe24df9} 
+void Mgr\+Gui.\+Hide\+Gui (\begin{DoxyParamCaption}\item[{string}]{gui\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+隐藏\+GUI界面 hide GUI panel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gui\+\_\+name} & GUI界面名称 GUI panel name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+GUI界面对象 GUI panel object
+\end{DoxyReturn}
+\Hypertarget{class_mgr_gui_a40ee3d019d77d17c343fcc64b5712088}\index{MgrGui@{MgrGui}!ShowGui$<$ T $>$@{ShowGui$<$ T $>$}}
+\index{ShowGui$<$ T $>$@{ShowGui$<$ T $>$}!MgrGui@{MgrGui}}
+\doxysubsubsection{\texorpdfstring{ShowGui$<$ T $>$()}{ShowGui< T >()}}
+{\footnotesize\ttfamily \label{class_mgr_gui_a40ee3d019d77d17c343fcc64b5712088} 
+void Mgr\+Gui.\+Show\+Gui$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{gui\+\_\+name}{, }\item[{int}]{layer}{, }\item[{Unity\+Action$<$ T $>$}]{call\+Back}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+加载\+GUI界面 load GUI panel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gui\+\_\+name} & GUI界面名称 GUI panel name with path\\
+\hline
+{\em layer} & 显示层级 display layer\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Base\+GUI类 Base\+GUI class\\
+\hline
+\end{DoxyTemplParams}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em \mbox{\hyperlink{class_gui_base}{Gui\+Base}}}]\end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Basic\+Framework/\+Unity\+Frame/Mgr\+Gui.\+cs\end{DoxyCompactItemize}

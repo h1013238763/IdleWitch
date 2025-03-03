@@ -1,0 +1,227 @@
+\doxysection{Mgr\+Locale Class Reference}
+\hypertarget{class_mgr_locale}{}\label{class_mgr_locale}\index{MgrLocale@{MgrLocale}}
+
+
+本地化管理器 Localization Manager  
+
+
+Inheritance diagram for Mgr\+Locale\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mgr_locale}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Locale $>$ \mbox{\hyperlink{class_mgr_locale_a88e2dab0555f0bc8920f6f9cf709baa3}{Get\+Locale\+List}} ()
+\begin{DoxyCompactList}\small\item\em 获取所有语言列表 Get all language list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mgr_locale_a13461987ec17a42650e0a113cebb5168}{Set\+Locale}} (int locale\+\_\+id)
+\begin{DoxyCompactList}\small\item\em 设置语言 Set language \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mgr_locale_a4b567d94f1d61f29aeccb747a40c24ad}{Object\+Localize}} (Game\+Object obj, string table\+\_\+name, string key\+\_\+name, Unity\+Action$<$ string $>$ update\+\_\+event)
+\begin{DoxyCompactList}\small\item\em 本地化目标对象 Localize target object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mgr_locale_a77e8fa649b9ad366dbd0abc289f77341}{Localize\+Text}} (Text text\+\_\+obj, string table\+\_\+name, string key\+\_\+name)
+\begin{DoxyCompactList}\small\item\em 本地化\+Text组件 Localize Text component \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mgr_locale_a70d37016e62c5b9ad480d6a4efcffe46}{Localize\+TMPText}} (Text\+Mesh\+Pro\+UGUI text\+\_\+obj, string table\+\_\+name, string key\+\_\+name)
+\begin{DoxyCompactList}\small\item\em 本地化\+TMPText组件 Localize TMPText component \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_mgr_locale_a50896fdf7716fd29a95c3bcfa610c142}{Get\+Locale\+Text}} (string table\+\_\+name, string key\+\_\+name)
+\begin{DoxyCompactList}\small\item\em 获取特定的本地化文本 Get specific localized text \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mgr_locale_ad004dcbaa5d95f57420dc4b36680ccc0}{New\+Data}} ()
+\begin{DoxyCompactList}\small\item\em 新建配置 New Configuration data \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_mgr_locale_abf31373c87465b1822e926465cdf13f4}{Save\+Data}} ()
+\begin{DoxyCompactList}\small\item\em 保存配置为json字符串 Save Configuration data as json string \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mgr_locale_af555d6c89b589e9f875d5d1ea14b9383}{Load\+Data}} (string config\+\_\+json)
+\begin{DoxyCompactList}\small\item\em 从json字符串加载配置 Load Configuration data from json string \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mgr_locale_a2f72419c739201c7f2708e8cab44c331}{Apply\+Data}} ()
+\begin{DoxyCompactList}\small\item\em 应用配置 Apply Configuration data \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mgr_locale_a58d083ec4a45d790adb92a91df972f95}\label{class_mgr_locale_a58d083ec4a45d790adb92a91df972f95} 
+const string {\bfseries DEFAULT\+\_\+\+FONT} = "{}Font/TMPFont/Noto\+Sans\+CJKsc-\/Regular SDFop"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_mgr_base-1-g}{Mgr\+Base$<$ T $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+static T \mbox{\hyperlink{class_mgr_base-1-g_a99b0e45113c7429d2e1d551e563c36f8}{Mgr}} ()
+\begin{DoxyCompactList}\small\item\em 获取类单例对象 Get Class Singleton Object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+本地化管理器 Localization Manager 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mgr_locale_a2f72419c739201c7f2708e8cab44c331}\index{MgrLocale@{MgrLocale}!ApplyData@{ApplyData}}
+\index{ApplyData@{ApplyData}!MgrLocale@{MgrLocale}}
+\doxysubsubsection{\texorpdfstring{ApplyData()}{ApplyData()}}
+{\footnotesize\ttfamily \label{class_mgr_locale_a2f72419c739201c7f2708e8cab44c331} 
+void Mgr\+Locale.\+Apply\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+应用配置 Apply Configuration data 
+
+
+
+Implements \mbox{\hyperlink{interface_i_save_data_ac20bc7989daec37828b04c8f54470414}{ISave\+Data}}.
+
+\Hypertarget{class_mgr_locale_a88e2dab0555f0bc8920f6f9cf709baa3}\index{MgrLocale@{MgrLocale}!GetLocaleList@{GetLocaleList}}
+\index{GetLocaleList@{GetLocaleList}!MgrLocale@{MgrLocale}}
+\doxysubsubsection{\texorpdfstring{GetLocaleList()}{GetLocaleList()}}
+{\footnotesize\ttfamily \label{class_mgr_locale_a88e2dab0555f0bc8920f6f9cf709baa3} 
+List$<$ Locale $>$ Mgr\+Locale.\+Get\+Locale\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取所有语言列表 Get all language list 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{class_mgr_locale_a50896fdf7716fd29a95c3bcfa610c142}\index{MgrLocale@{MgrLocale}!GetLocaleText@{GetLocaleText}}
+\index{GetLocaleText@{GetLocaleText}!MgrLocale@{MgrLocale}}
+\doxysubsubsection{\texorpdfstring{GetLocaleText()}{GetLocaleText()}}
+{\footnotesize\ttfamily \label{class_mgr_locale_a50896fdf7716fd29a95c3bcfa610c142} 
+string Mgr\+Locale.\+Get\+Locale\+Text (\begin{DoxyParamCaption}\item[{string}]{table\+\_\+name}{, }\item[{string}]{key\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取特定的本地化文本 Get specific localized text 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table\+\_\+name} & 表名 Table name\\
+\hline
+{\em key\+\_\+name} & 键名 Key name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+本地化文本 Localized text
+\end{DoxyReturn}
+\Hypertarget{class_mgr_locale_af555d6c89b589e9f875d5d1ea14b9383}\index{MgrLocale@{MgrLocale}!LoadData@{LoadData}}
+\index{LoadData@{LoadData}!MgrLocale@{MgrLocale}}
+\doxysubsubsection{\texorpdfstring{LoadData()}{LoadData()}}
+{\footnotesize\ttfamily \label{class_mgr_locale_af555d6c89b589e9f875d5d1ea14b9383} 
+void Mgr\+Locale.\+Load\+Data (\begin{DoxyParamCaption}\item[{string}]{config\+\_\+json}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+从json字符串加载配置 Load Configuration data from json string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em config\+\_\+json} & 配置json字符串 Configuration json string\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_i_save_data_adb3a45aaba0a80ebd328ebb6fe67b90e}{ISave\+Data}}.
+
+\Hypertarget{class_mgr_locale_a77e8fa649b9ad366dbd0abc289f77341}\index{MgrLocale@{MgrLocale}!LocalizeText@{LocalizeText}}
+\index{LocalizeText@{LocalizeText}!MgrLocale@{MgrLocale}}
+\doxysubsubsection{\texorpdfstring{LocalizeText()}{LocalizeText()}}
+{\footnotesize\ttfamily \label{class_mgr_locale_a77e8fa649b9ad366dbd0abc289f77341} 
+void Mgr\+Locale.\+Localize\+Text (\begin{DoxyParamCaption}\item[{Text}]{text\+\_\+obj}{, }\item[{string}]{table\+\_\+name}{, }\item[{string}]{key\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+本地化\+Text组件 Localize Text component 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+\_\+obj} & Text组件 Text component\\
+\hline
+{\em table\+\_\+name} & 表名 table name\\
+\hline
+{\em key\+\_\+name} & 键名 key name\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mgr_locale_a70d37016e62c5b9ad480d6a4efcffe46}\index{MgrLocale@{MgrLocale}!LocalizeTMPText@{LocalizeTMPText}}
+\index{LocalizeTMPText@{LocalizeTMPText}!MgrLocale@{MgrLocale}}
+\doxysubsubsection{\texorpdfstring{LocalizeTMPText()}{LocalizeTMPText()}}
+{\footnotesize\ttfamily \label{class_mgr_locale_a70d37016e62c5b9ad480d6a4efcffe46} 
+void Mgr\+Locale.\+Localize\+TMPText (\begin{DoxyParamCaption}\item[{Text\+Mesh\+Pro\+UGUI}]{text\+\_\+obj}{, }\item[{string}]{table\+\_\+name}{, }\item[{string}]{key\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+本地化\+TMPText组件 Localize TMPText component 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+\_\+obj} & TMPText组件 TMPText component\\
+\hline
+{\em table\+\_\+name} & 表名 table name\\
+\hline
+{\em key\+\_\+name} & 键名 key name\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mgr_locale_ad004dcbaa5d95f57420dc4b36680ccc0}\index{MgrLocale@{MgrLocale}!NewData@{NewData}}
+\index{NewData@{NewData}!MgrLocale@{MgrLocale}}
+\doxysubsubsection{\texorpdfstring{NewData()}{NewData()}}
+{\footnotesize\ttfamily \label{class_mgr_locale_ad004dcbaa5d95f57420dc4b36680ccc0} 
+void Mgr\+Locale.\+New\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+新建配置 New Configuration data 
+
+
+
+Implements \mbox{\hyperlink{interface_i_save_data_a9bc0f8a6fd8143f4a0b371db48eb8f95}{ISave\+Data}}.
+
+\Hypertarget{class_mgr_locale_a4b567d94f1d61f29aeccb747a40c24ad}\index{MgrLocale@{MgrLocale}!ObjectLocalize@{ObjectLocalize}}
+\index{ObjectLocalize@{ObjectLocalize}!MgrLocale@{MgrLocale}}
+\doxysubsubsection{\texorpdfstring{ObjectLocalize()}{ObjectLocalize()}}
+{\footnotesize\ttfamily \label{class_mgr_locale_a4b567d94f1d61f29aeccb747a40c24ad} 
+void Mgr\+Locale.\+Object\+Localize (\begin{DoxyParamCaption}\item[{Game\+Object}]{obj}{, }\item[{string}]{table\+\_\+name}{, }\item[{string}]{key\+\_\+name}{, }\item[{Unity\+Action$<$ string $>$}]{update\+\_\+event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+本地化目标对象 Localize target object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & 目标对象 target object\\
+\hline
+{\em table\+\_\+name} & 表名 table name\\
+\hline
+{\em key\+\_\+name} & 键名 key name\\
+\hline
+{\em update\+\_\+event} & 更新事件 update event\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mgr_locale_abf31373c87465b1822e926465cdf13f4}\index{MgrLocale@{MgrLocale}!SaveData@{SaveData}}
+\index{SaveData@{SaveData}!MgrLocale@{MgrLocale}}
+\doxysubsubsection{\texorpdfstring{SaveData()}{SaveData()}}
+{\footnotesize\ttfamily \label{class_mgr_locale_abf31373c87465b1822e926465cdf13f4} 
+string Mgr\+Locale.\+Save\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+保存配置为json字符串 Save Configuration data as json string 
+
+
+
+Implements \mbox{\hyperlink{interface_i_save_data_a530d1f6d2de1754270ac799cf501d6e5}{ISave\+Data}}.
+
+\Hypertarget{class_mgr_locale_a13461987ec17a42650e0a113cebb5168}\index{MgrLocale@{MgrLocale}!SetLocale@{SetLocale}}
+\index{SetLocale@{SetLocale}!MgrLocale@{MgrLocale}}
+\doxysubsubsection{\texorpdfstring{SetLocale()}{SetLocale()}}
+{\footnotesize\ttfamily \label{class_mgr_locale_a13461987ec17a42650e0a113cebb5168} 
+void Mgr\+Locale.\+Set\+Locale (\begin{DoxyParamCaption}\item[{int}]{locale\+\_\+id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置语言 Set language 
+
+
+\begin{DoxyParams}{Parameters}
+{\em locale\+\_\+id} & 语言\+ID language ID\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Basic\+Framework/\+Unity\+Frame/Mgr\+Locale.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,175 @@
+\doxysection{Mgr\+Json Class Reference}
+\hypertarget{class_mgr_json}{}\label{class_mgr_json}\index{MgrJson@{MgrJson}}
+
+
+Json文件管理器 Json File Manager.  
+
+
+Inheritance diagram for Mgr\+Json\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mgr_json}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_mgr_json_a352296195b37b4485da43f6aade5ec76}{Write\+File$<$ T $>$}} (T obj, string file\+\_\+name, string file\+\_\+path=null)
+\begin{DoxyCompactList}\small\item\em 写入对象为文件 Write Object to File \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_mgr_json_a6e0947a3027c2f86b5fa383f4c275265}{Read\+File$<$ T $>$}} (string file\+\_\+name, string file\+\_\+path=null)
+\begin{DoxyCompactList}\small\item\em 读取文件为对象 Read File to Object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mgr_json_a5ea3da9a739e352efc8ec54396c1a766}{Delete\+File}} (string file\+\_\+name, string file\+\_\+path=null)
+\begin{DoxyCompactList}\small\item\em 删除文件 delete file \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{class_mgr_json_a111227a84257e1ad670ced48af07bf25}{Read\+Folder}} (string folder\+\_\+path)
+\begin{DoxyCompactList}\small\item\em 返回文件夹下所有文件路径 return all file paths under the folder \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_mgr_json_a8bb10f10d1650f11193a86310a526925}{Json\+To\+Object$<$ T $>$}} (string text)
+\begin{DoxyCompactList}\small\item\em 转换\+Json为对象 Convert Json to Object \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_mgr_json_a6bc90ddddf59906ea79502ff436b200b}{Object\+To\+Json$<$ T $>$}} (T obj)
+\begin{DoxyCompactList}\small\item\em 转换对象为\+Json Convert Object to Json \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_mgr_base-1-g}{Mgr\+Base$<$ T $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+static T \mbox{\hyperlink{class_mgr_base-1-g_a99b0e45113c7429d2e1d551e563c36f8}{Mgr}} ()
+\begin{DoxyCompactList}\small\item\em 获取类单例对象 Get Class Singleton Object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Json文件管理器 Json File Manager. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mgr_json_a5ea3da9a739e352efc8ec54396c1a766}\index{MgrJson@{MgrJson}!DeleteFile@{DeleteFile}}
+\index{DeleteFile@{DeleteFile}!MgrJson@{MgrJson}}
+\doxysubsubsection{\texorpdfstring{DeleteFile()}{DeleteFile()}}
+{\footnotesize\ttfamily \label{class_mgr_json_a5ea3da9a739e352efc8ec54396c1a766} 
+void Mgr\+Json.\+Delete\+File (\begin{DoxyParamCaption}\item[{string}]{file\+\_\+name}{, }\item[{string}]{file\+\_\+path}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+删除文件 delete file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & 文件名+后缀 file name + suffix\\
+\hline
+{\em file\+\_\+path} & 删除路径(默认为空) delete path (default is empty)\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_mgr_json_a8bb10f10d1650f11193a86310a526925}\index{MgrJson@{MgrJson}!JsonToObject$<$ T $>$@{JsonToObject$<$ T $>$}}
+\index{JsonToObject$<$ T $>$@{JsonToObject$<$ T $>$}!MgrJson@{MgrJson}}
+\doxysubsubsection{\texorpdfstring{JsonToObject$<$ T $>$()}{JsonToObject< T >()}}
+{\footnotesize\ttfamily \label{class_mgr_json_a8bb10f10d1650f11193a86310a526925} 
+T Mgr\+Json.\+Json\+To\+Object$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+转换\+Json为对象 Convert Json to Object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Json字符串 Json string\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & 对象类型 object type\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+转换结果对象 convert result object
+\end{DoxyReturn}
+\Hypertarget{class_mgr_json_a6bc90ddddf59906ea79502ff436b200b}\index{MgrJson@{MgrJson}!ObjectToJson$<$ T $>$@{ObjectToJson$<$ T $>$}}
+\index{ObjectToJson$<$ T $>$@{ObjectToJson$<$ T $>$}!MgrJson@{MgrJson}}
+\doxysubsubsection{\texorpdfstring{ObjectToJson$<$ T $>$()}{ObjectToJson< T >()}}
+{\footnotesize\ttfamily \label{class_mgr_json_a6bc90ddddf59906ea79502ff436b200b} 
+string Mgr\+Json.\+Object\+To\+Json$<$ T $>$ (\begin{DoxyParamCaption}\item[{T}]{obj}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+转换对象为\+Json Convert Object to Json 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & 对象类型 object type\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & 对象 object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+转换结果\+Json convert result Json
+\end{DoxyReturn}
+\Hypertarget{class_mgr_json_a6e0947a3027c2f86b5fa383f4c275265}\index{MgrJson@{MgrJson}!ReadFile$<$ T $>$@{ReadFile$<$ T $>$}}
+\index{ReadFile$<$ T $>$@{ReadFile$<$ T $>$}!MgrJson@{MgrJson}}
+\doxysubsubsection{\texorpdfstring{ReadFile$<$ T $>$()}{ReadFile< T >()}}
+{\footnotesize\ttfamily \label{class_mgr_json_a6e0947a3027c2f86b5fa383f4c275265} 
+T Mgr\+Json.\+Read\+File$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{file\+\_\+name}{, }\item[{string}]{file\+\_\+path}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+读取文件为对象 Read File to Object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & 文件名+后缀 file name + suffix\\
+\hline
+{\em file\+\_\+path} & 读取路径(默认为空) read path (default is empty)\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & 读取对象类型 read object type\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+读取对象 read object
+\end{DoxyReturn}
+\Hypertarget{class_mgr_json_a111227a84257e1ad670ced48af07bf25}\index{MgrJson@{MgrJson}!ReadFolder@{ReadFolder}}
+\index{ReadFolder@{ReadFolder}!MgrJson@{MgrJson}}
+\doxysubsubsection{\texorpdfstring{ReadFolder()}{ReadFolder()}}
+{\footnotesize\ttfamily \label{class_mgr_json_a111227a84257e1ad670ced48af07bf25} 
+List$<$ string $>$ Mgr\+Json.\+Read\+Folder (\begin{DoxyParamCaption}\item[{string}]{folder\+\_\+path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+返回文件夹下所有文件路径 return all file paths under the folder 
+
+
+\begin{DoxyParams}{Parameters}
+{\em folder\+\_\+path} & 文件夹路径 folder path\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+文件路径列表 file path list
+\end{DoxyReturn}
+\Hypertarget{class_mgr_json_a352296195b37b4485da43f6aade5ec76}\index{MgrJson@{MgrJson}!WriteFile$<$ T $>$@{WriteFile$<$ T $>$}}
+\index{WriteFile$<$ T $>$@{WriteFile$<$ T $>$}!MgrJson@{MgrJson}}
+\doxysubsubsection{\texorpdfstring{WriteFile$<$ T $>$()}{WriteFile< T >()}}
+{\footnotesize\ttfamily \label{class_mgr_json_a352296195b37b4485da43f6aade5ec76} 
+void Mgr\+Json.\+Write\+File$<$ T $>$ (\begin{DoxyParamCaption}\item[{T}]{obj}{, }\item[{string}]{file\+\_\+name}{, }\item[{string}]{file\+\_\+path}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+写入对象为文件 Write Object to File 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & 写入对象 write object\\
+\hline
+{\em file\+\_\+name} & 文件名+后缀 file name + suffix\\
+\hline
+{\em file\+\_\+path} & 写入路径(默认为空) write path (default is empty)\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & 写入对象类型 write object type\\
+\hline
+\end{DoxyTemplParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Basic\+Framework/\+Resource\+Frame/Mgr\+Json.\+cs\end{DoxyCompactItemize}

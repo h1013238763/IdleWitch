@@ -1,0 +1,161 @@
+\doxysection{Event\+Mgr Class Reference}
+\hypertarget{class_event_mgr}{}\label{class_event_mgr}\index{EventMgr@{EventMgr}}
+
+
+事件中心模块管理器 Event Center Module Manager  
+
+
+Inheritance diagram for Event\+Mgr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_event_mgr}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_event_mgr_a2e8f3f3786a2d20059884003554f446e}{Add\+Event\+Listener$<$ T $>$}} (string name, Unity\+Action$<$ T $>$ action)
+\begin{DoxyCompactList}\small\item\em 添加事件监听 Add Event Listener \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_event_mgr_adb168bf2312fa3ec0d88ad4d298f7d7a}{Add\+Event\+Listener}} (string name, Unity\+Action action)
+\begin{DoxyCompactList}\small\item\em 添加无参事件监听 Add No Parameter Event Listener \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_event_mgr_ab128a0fc0cc1c5b90dbd585b4024c802}{Event\+Trigger$<$ T $>$}} (string name, T info)
+\item 
+void \mbox{\hyperlink{class_event_mgr_adfa8c04254aa9e94876fe09dc95045cf}{Event\+Trigger}} (string name)
+\begin{DoxyCompactList}\small\item\em 触发无参事件 Trigger No Parameter Event \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_event_mgr_a1b583aad1681d1a8150e5ddce2e3481a}{Remove\+Event\+Listener$<$ T $>$}} (string name, Unity\+Action$<$ T $>$ action)
+\begin{DoxyCompactList}\small\item\em 移除事件监听 Remove Event Listener \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_event_mgr_ad18ea67c74d4f9c92c76ae78841f81d9}{Remove\+Event\+Listener}} (string name, Unity\+Action action)
+\begin{DoxyCompactList}\small\item\em 移除无参事件监听 Remove No Parameter Event Listener \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_event_mgr_a78498e5d8a509e8f24f688f20f0fadfd}{Clear}} (string name)
+\begin{DoxyCompactList}\small\item\em 清空特定事件监听 Clear Specific Event Listener \end{DoxyCompactList}\item 
+\Hypertarget{class_event_mgr_a02ee96dc8a51f2fdc2a0a866b431d262}\label{class_event_mgr_a02ee96dc8a51f2fdc2a0a866b431d262} 
+void {\bfseries Clear} ()
+\begin{DoxyCompactList}\small\item\em 清空全部事件监听 Clear All Event Listener \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_mgr_base-1-g}{Mgr\+Base$<$ T $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+static T \mbox{\hyperlink{class_mgr_base-1-g_a99b0e45113c7429d2e1d551e563c36f8}{Mgr}} ()
+\begin{DoxyCompactList}\small\item\em 获取类单例对象 Get Class Singleton Object \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+事件中心模块管理器 Event Center Module Manager 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_event_mgr_adb168bf2312fa3ec0d88ad4d298f7d7a}\index{EventMgr@{EventMgr}!AddEventListener@{AddEventListener}}
+\index{AddEventListener@{AddEventListener}!EventMgr@{EventMgr}}
+\doxysubsubsection{\texorpdfstring{AddEventListener()}{AddEventListener()}}
+{\footnotesize\ttfamily \label{class_event_mgr_adb168bf2312fa3ec0d88ad4d298f7d7a} 
+void Event\+Mgr.\+Add\+Event\+Listener (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{Unity\+Action}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+添加无参事件监听 Add No Parameter Event Listener 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & 事件名称 Event Name \\
+\hline
+{\em action} & 触发方法 Trigger Method \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_event_mgr_a2e8f3f3786a2d20059884003554f446e}\index{EventMgr@{EventMgr}!AddEventListener$<$ T $>$@{AddEventListener$<$ T $>$}}
+\index{AddEventListener$<$ T $>$@{AddEventListener$<$ T $>$}!EventMgr@{EventMgr}}
+\doxysubsubsection{\texorpdfstring{AddEventListener$<$ T $>$()}{AddEventListener< T >()}}
+{\footnotesize\ttfamily \label{class_event_mgr_a2e8f3f3786a2d20059884003554f446e} 
+void \mbox{\hyperlink{class_event_mgr_adb168bf2312fa3ec0d88ad4d298f7d7a}{Event\+Mgr.\+Add\+Event\+Listener}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{Unity\+Action$<$ T $>$}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+添加事件监听 Add Event Listener 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & 事件名称 Event Name \\
+\hline
+{\em action} & 触发方法 Trigger Method \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_event_mgr_a78498e5d8a509e8f24f688f20f0fadfd}\index{EventMgr@{EventMgr}!Clear@{Clear}}
+\index{Clear@{Clear}!EventMgr@{EventMgr}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily \label{class_event_mgr_a78498e5d8a509e8f24f688f20f0fadfd} 
+void Event\+Mgr.\+Clear (\begin{DoxyParamCaption}\item[{string}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+清空特定事件监听 Clear Specific Event Listener 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & 事件名称 Event Name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_event_mgr_adfa8c04254aa9e94876fe09dc95045cf}\index{EventMgr@{EventMgr}!EventTrigger@{EventTrigger}}
+\index{EventTrigger@{EventTrigger}!EventMgr@{EventMgr}}
+\doxysubsubsection{\texorpdfstring{EventTrigger()}{EventTrigger()}}
+{\footnotesize\ttfamily \label{class_event_mgr_adfa8c04254aa9e94876fe09dc95045cf} 
+void Event\+Mgr.\+Event\+Trigger (\begin{DoxyParamCaption}\item[{string}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+触发无参事件 Trigger No Parameter Event 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & 事件名称 Event Name\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_event_mgr_ab128a0fc0cc1c5b90dbd585b4024c802}\index{EventMgr@{EventMgr}!EventTrigger$<$ T $>$@{EventTrigger$<$ T $>$}}
+\index{EventTrigger$<$ T $>$@{EventTrigger$<$ T $>$}!EventMgr@{EventMgr}}
+\doxysubsubsection{\texorpdfstring{EventTrigger$<$ T $>$()}{EventTrigger< T >()}}
+{\footnotesize\ttfamily \label{class_event_mgr_ab128a0fc0cc1c5b90dbd585b4024c802} 
+void \mbox{\hyperlink{class_event_mgr_adfa8c04254aa9e94876fe09dc95045cf}{Event\+Mgr.\+Event\+Trigger}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{T}]{info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+触发事件 Trigger Event
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & 事件名称 Event Name\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_event_mgr_ad18ea67c74d4f9c92c76ae78841f81d9}\index{EventMgr@{EventMgr}!RemoveEventListener@{RemoveEventListener}}
+\index{RemoveEventListener@{RemoveEventListener}!EventMgr@{EventMgr}}
+\doxysubsubsection{\texorpdfstring{RemoveEventListener()}{RemoveEventListener()}}
+{\footnotesize\ttfamily \label{class_event_mgr_ad18ea67c74d4f9c92c76ae78841f81d9} 
+void Event\+Mgr.\+Remove\+Event\+Listener (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{Unity\+Action}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+移除无参事件监听 Remove No Parameter Event Listener 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & 事件名称 Event Name \\
+\hline
+{\em action} & 触发方法 Trigger Method \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_event_mgr_a1b583aad1681d1a8150e5ddce2e3481a}\index{EventMgr@{EventMgr}!RemoveEventListener$<$ T $>$@{RemoveEventListener$<$ T $>$}}
+\index{RemoveEventListener$<$ T $>$@{RemoveEventListener$<$ T $>$}!EventMgr@{EventMgr}}
+\doxysubsubsection{\texorpdfstring{RemoveEventListener$<$ T $>$()}{RemoveEventListener< T >()}}
+{\footnotesize\ttfamily \label{class_event_mgr_a1b583aad1681d1a8150e5ddce2e3481a} 
+void \mbox{\hyperlink{class_event_mgr_ad18ea67c74d4f9c92c76ae78841f81d9}{Event\+Mgr.\+Remove\+Event\+Listener}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{Unity\+Action$<$ T $>$}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+移除事件监听 Remove Event Listener 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & 事件名称 Event Name \\
+\hline
+{\em action} & 触发方法 Trigger Method \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Basic\+Framework/\+Unity\+Frame/Event\+Mgr.\+cs\end{DoxyCompactItemize}

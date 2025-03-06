@@ -89,3 +89,9 @@ For specific functions for each module and class, please see the Github reposito
 download Documentation/html folder
 open Documentation/html/index.html file as webpage.
 I used the Doxygen tool to automatically generate the code documentation for convenience.
+
+The basic flow of the game
+    Click on the door to enter scene 2
+    Talk to the chick npc and get a ball.
+    Return to scene 1, click on the triangular platform and place the ball.
+    Go back to scene 2, talk to the chick npc and complete the quest.

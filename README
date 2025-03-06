@@ -1,0 +1,90 @@
+The code part of the project is divided into two main parts: 
+the generic framework code that can be reused in other projects, 
+and the game code that is focused on this game and cant be reused.
+
+The framework code is placed in the BasicFramework directory, 
+the main function is to package unitys various functions and my own framework, 
+making the game code more concise, easy to read, easy to maintain. 
+The design goal of the framework code is to maximize the generality and simplicity to implement the complex functions of Unity. 
+So that other classes can implement or call the complex basic game functions function within few lines of code
+
+Under this section there are three parts: the base framework, the resource framework, and the unity framework.
+
+The base framework is the framework for the base functionality and classes.
+IConsole interface is the console interface, used to display debugging information in the game. 
+    It can parse string commands, and custom commands can be implemented by inheriting IConsole interface.
+ISaveData interface is the interface of data management. 
+    inheriting the ISaveData interface for quick customization of persistent storage.
+MgrBase class is the base class of singleton pattern manager, 
+    all manager classes in the game inherit from MgrBase class. 
+    It provides an implementation of the singleton pattern.
+MgrBaseMono class is the base class of Unity MonoBehavior based singleton manager, 
+    all manager classes in the game that need lifecycle functions inherit from MgrBaseMono class.
+    It provides the implementation of the singleton pattern and the enabling of coroutine functions.
+The MgrConsole class is a console manager class that accepts and assigns string commands to each manager to decouple code.
+
+Resource Framework is the framework for managing game resources and computer resources
+MgrJson class is the class that controls Json behavior. 
+    Uses an external library, Newtonsoft.Json, 
+    which provides functions for serialization and deserialization of Json data.
+    Manager private fast data storage and reading and json character conversion.
+MgrMono class is a class that simulates MonoBehaviour behavior 
+    and is used to use Unitys lifecycle functions and manage coroutine function in non-MonoBehaviour classes.
+MgrPool is the object pool manager class for managing the object pool in the game. 
+    It provides functions for creating, destroying, fetching, and recycling generic object pools.
+MgrResource is a resource manager class for managing resources in the game. 
+    It provides synchronous and asynchronous loading, unloading and fetching of resources.
+
+The Unity Framework package the functionality of the Unity engine to enable simpler code and calls.
+MgrAudio is the audio manager class, used to manage the audio in the game. 
+    It provides functions such as playing, pausing, stopping, and adjusting the volume of audio channels.
+MgrEvent is an event manager class for managing events in the game. 
+    MgrEvent is an event manager class for managing events in the game. 
+    This manager provides the game with an implementation of the Observer pattern
+    It provides functions such as registering, canceling, triggering and clearing events.
+MgrGui is a GUI manager class used to manage the GUI in the game, 
+    providing functions such as creating, destroying, displaying and hiding the GUI.
+GuiBase is a GUI base class for automatically reading, storing and assigning Gui behaviors. 
+    For example, automatic read all button components to easily assign click events, etc.
+    It support most Unity UI components and TMPro components.
+MgrLocale is a localization manager class which uses Unitys localization library. 
+    It provides localization reading, setting, switching and so on.
+    It support both Unity Text component and TMPro TextMeshPro component.
+MgrScreen is a screen manager class, used to manage the graphic behaviors in the game. 
+    It provides functions such as read and adjust screen resolution, fullscreen, windowed, etc.
+MgrScene is a scene manager class for managing scenes in the game. 
+    It provides functions such as synchronous and asynchronous loading, unloading and switching scenes.
+SceneBase is a scene base class, which is used to control the behavior of the scene by code. 
+    For example, it can automatically control the scenes load event, unload event, and so on. 
+    For example, starting music and loading specific gui while enter the scene.
+
+The game code is placed in the GameModule directory, 
+    and its main function is to implement the logic and functionality of the game 
+    and add game features in a modular way to decouple them.
+The Object module is used to configure interactable items in the game, such as npcs and doors.
+    The IInteractable interface is the interface of an Interactable object.
+    Door is doors used in the game to switch to other scenarios and used as a player object creation point.
+    Servant is an npc used in the game to trigger quests and conversations.
+    TownCore is an in-game pedestal used to place items.
+The GuiPanel folder contains all the gui panel implementations.
+    GuiConfirm is a confirmation panel that displays confirmation messages. 
+        For example, “if you want to save the game progress”, and so on.
+    GuiDialogue is the dialog panel, used to display dialogue information.
+    GuiKeyTip is the key tip panel, used to display keycode tip information.
+    GuiLoading is the loading panel, it is used to mask the screen for scene switch loading.
+    /* debugging due to my framework problems, some bugs too hard to locate triggers and reasons.
+    GuiSetting is the setting panel, it is used to set the volume, screen and language of the game.
+    GuiStart is the start panel, used to show the start screen of the game.
+    */
+
+The SceneModule folder contains the implementation of the scenes functionality.
+Each scene has a corresponding class based on SceneBaes used to control the enter and exit triggered behavior.
+
+MgrConfig is the game configuration manager class, enabled before the game officially starts. 
+    It controls the initialization behavior of the game, such as configuring the volume, screen, and initialization of each manager.
+MgrGame is the game content manager class, which is used to manage in-game behavior, 
+    such as in-game saving, loading, and exiting.
+
+For specific functions for each module and class, please see the Github repository
+Assets/Documentation/html/index.html file.
+I used the Doxygen tool to automatically generate the code documentation for convenience.

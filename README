@@ -86,5 +86,5 @@ MgrGame is the game content manager class, which is used to manage in-game behav
     such as in-game saving, loading, and exiting.
 
 For specific functions for each module and class, please see the Github repository
-Assets/Documentation/html/index.html file.
+Documentation/html/index.html file.
 I used the Doxygen tool to automatically generate the code documentation for convenience.
